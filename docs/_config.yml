@@ -1,0 +1,21 @@
+title: Doc Projet
+description: Documentation du projet
+
+# Theme
+remote_theme: leskaribous/JustTheDocsTemplate
+
+# Plugins
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-include-cache
+
+# Exclusions
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle
+  - vendor/cache
+  - vendor/gems
+  - vendor/ruby
