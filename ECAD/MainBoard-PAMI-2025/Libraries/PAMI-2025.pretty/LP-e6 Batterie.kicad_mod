@@ -1,0 +1,213 @@
+(footprint "LP-e6 Batterie"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at -2.5 10.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "f6898030-9909-406e-851b-ca80c2cc4a9c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "LP-e6 Batterie"
+		(at 5.5 10.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "3e619cb0-fb8b-4447-8392-707203938b94")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" "LP-e6 Batterie"
+		(at -2 8.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "13c3e933-af35-46e6-8406-dd5817b7df20")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "967030b2-121d-4dec-81fd-b5899fc701bb")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "27ef5102-116f-4897-a5f5-310cf94fba01")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -19.25 -2)
+		(end -19.25 7)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "68ee943b-78b6-4307-a023-a365a3268dcf")
+	)
+	(fp_line
+		(start -19.25 -2)
+		(end 19.25 -2)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "5c51d819-1a49-4808-80e1-b1057deca752")
+	)
+	(fp_line
+		(start -7.25 19)
+		(end 7.25 19)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "cc03d220-6e85-468c-a51b-561dd7f9b2b1")
+	)
+	(fp_line
+		(start -3.75 -2)
+		(end -3.75 2)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "a793410a-f3a8-477a-b955-aa2185524e97")
+	)
+	(fp_line
+		(start -3.75 2)
+		(end 3.75 2)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "a15ca9e9-4c30-4040-952a-882fe504909e")
+	)
+	(fp_line
+		(start 3.75 -2)
+		(end -3.75 -2)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "86495d47-5dc4-4a61-a8b8-bc11c1c19d81")
+	)
+	(fp_line
+		(start 3.75 2)
+		(end 3.75 -2)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "a8538248-9c40-42d3-b7ed-a73ee7719cb1")
+	)
+	(fp_line
+		(start 19.25 -2)
+		(end 19.25 7)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "878febb4-4c82-4039-823f-d1edad226cec")
+	)
+	(fp_arc
+		(start -7.25 19)
+		(mid -15.735281 15.485281)
+		(end -19.25 7)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "825efa92-6d3d-4b83-a603-136965f74c5f")
+	)
+	(fp_arc
+		(start 19.25 7)
+		(mid 15.735281 15.485281)
+		(end 7.25 19)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "a13cd2a9-3285-4c48-9aa6-8f32eed5352a")
+	)
+	(fp_text user "${REFERENCE}"
+		(at -1.5 12.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "70a79d45-a8a0-4055-89ce-7ce20b89ed75")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at -1.25 0)
+		(size 2 2)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.125)
+		(uuid "9973ff40-d865-452d-b23d-fe7834d0a9ee")
+	)
+	(pad "2" thru_hole circle
+		(at 1.25 0)
+		(size 2 2)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.125)
+		(uuid "b6618d6a-eec4-4d94-a473-960b1db8b7a1")
+	)
+	(model "${KIPRJMOD}/Libraries/canon-lp-e6-battery/Component - Canon LP-E6 (Canon 5D).igs"
+		(offset
+			(xyz 0 2 3)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 0)
+		)
+	)
+)
