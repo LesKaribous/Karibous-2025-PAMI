@@ -1089,6 +1089,163 @@
 				)
 			)
 		)
+		(symbol "Device:CP_Small"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.254) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.254 1.778 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "CP_Small"
+				(at 0.254 -2.032 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Polarized capacitor, small symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "CP_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "CP_Small_0_1"
+				(rectangle
+					(start -1.524 -0.3048)
+					(end 1.524 -0.6858)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start -1.524 0.6858)
+					(end 1.524 0.3048)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 1.524) (xy -0.762 1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.016 1.27) (xy -1.016 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "CP_Small_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 1.8542)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 1.8542)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Device:C_Polarized_Small"
 			(pin_numbers hide)
 			(pin_names
@@ -3572,6 +3729,145 @@
 				)
 			)
 		)
+		(symbol "Regulator_Linear:AMS1117-3.3"
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -3.81 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "AMS1117-3.3"
+				(at 0 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.advanced-monolithic.com/pdf/ds1117.pdf"
+				(at 2.54 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "1A Low Dropout regulator, positive, 3.3V fixed output, SOT-223"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "linear regulator ldo fixed positive"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SOT?223*TabPin2*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "AMS1117-3.3_0_1"
+				(rectangle
+					(start -5.08 -5.08)
+					(end 5.08 1.905)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "AMS1117-3.3_1_1"
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "VO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "VI"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Regulator_Switching:R-78E3.3-1.0"
 			(pin_names
 				(offset 0.254)
@@ -4706,9 +5002,9 @@
 		)
 		(symbol "power:+5VP"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -4756,7 +5052,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "power-flag"
+			(property "ki_keywords" "global power"
 				(at 0 0 0)
 				(effects
 					(font
@@ -4806,8 +5102,128 @@
 			(symbol "+5VP_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
-					(name "+5VP"
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "power:+9V"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+9V"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+9V\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+9V_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+9V_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5060,7 +5476,7 @@
 		(uuid "088c60ef-e3bd-4d4c-86c2-a5dfefbb56d7")
 	)
 	(junction
-		(at 67.31 29.21)
+		(at 78.74 26.67)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1945f615-402e-4140-9007-d173fb1f577f")
@@ -5072,13 +5488,19 @@
 		(uuid "1c3e58ab-c18d-45ff-b46e-c2e0189aba4d")
 	)
 	(junction
-		(at 138.43 26.67)
+		(at 165.1 29.21)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2237e9cc-5880-407b-b151-439470be72d6")
 	)
 	(junction
-		(at 85.09 29.21)
+		(at 87.63 49.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "22c16f24-8593-4180-a512-bdc8fa03b6ca")
+	)
+	(junction
+		(at 96.52 26.67)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "24679647-d44d-4547-8114-1cb990c96dde")
@@ -5096,10 +5518,22 @@
 		(uuid "36cbabb2-db0d-4990-8224-3ea972e5c71f")
 	)
 	(junction
+		(at 66.04 49.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "38421243-4f40-425d-af3f-38bfbac78950")
+	)
+	(junction
 		(at 101.6 172.72)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3ad6f0ee-925b-48ca-bbf6-656b137946e6")
+	)
+	(junction
+		(at 210.82 21.59)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3d9b9ba5-1114-4e5c-9681-b3c87411fe17")
 	)
 	(junction
 		(at 208.28 90.17)
@@ -5112,6 +5546,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "402c7184-24e5-4faa-8347-eca4d0102948")
+	)
+	(junction
+		(at 69.85 49.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4142c60c-38ce-46f0-afae-8272461f12f4")
 	)
 	(junction
 		(at 41.91 48.26)
@@ -5138,6 +5578,18 @@
 		(uuid "7b734f2b-9326-4a6a-afc7-86ee44dd6b61")
 	)
 	(junction
+		(at 90.17 49.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "82d547b1-2b91-4010-b2e3-57277c54c894")
+	)
+	(junction
+		(at 87.63 34.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8671d8de-1a19-452d-9c2b-f01467221584")
+	)
+	(junction
 		(at 266.7 130.81)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5148,12 +5600,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "96821f02-70b2-444c-8e39-36108fd71405")
-	)
-	(junction
-		(at 210.82 21.59)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b866f230-5bb1-4fc2-bc49-fc79db9342ff")
 	)
 	(junction
 		(at 27.94 121.92)
@@ -5267,7 +5713,7 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 22.86) (xy 85.09 29.21)
+			(xy 96.52 20.32) (xy 96.52 26.67)
 		)
 		(stroke
 			(width 0)
@@ -5317,7 +5763,7 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 24.13) (xy 138.43 26.67)
+			(xy 165.1 26.67) (xy 165.1 29.21)
 		)
 		(stroke
 			(width 0)
@@ -5347,7 +5793,7 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 22.86) (xy 85.09 22.86)
+			(xy 90.17 20.32) (xy 96.52 20.32)
 		)
 		(stroke
 			(width 0)
@@ -5457,6 +5903,16 @@
 	)
 	(wire
 		(pts
+			(xy 78.74 26.67) (xy 78.74 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "25a5b04d-916a-43e9-82bf-562cbfde437d")
+	)
+	(wire
+		(pts
 			(xy 29.21 172.72) (xy 31.75 172.72)
 		)
 		(stroke
@@ -5487,7 +5943,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 22.86) (xy 67.31 22.86)
+			(xy 85.09 20.32) (xy 78.74 20.32)
 		)
 		(stroke
 			(width 0)
@@ -5524,6 +5980,16 @@
 			(type default)
 		)
 		(uuid "307ac8d1-db4b-4756-83fa-12b4f9ca1d3b")
+	)
+	(wire
+		(pts
+			(xy 90.17 57.15) (xy 90.17 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "31eb70d2-9579-4677-b4bf-7c19a2ef3ff8")
 	)
 	(wire
 		(pts
@@ -5567,6 +6033,16 @@
 	)
 	(wire
 		(pts
+			(xy 69.85 49.53) (xy 71.12 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a89170e-fb04-478b-993c-f4f428122f98")
+	)
+	(wire
+		(pts
 			(xy 29.21 115.57) (xy 27.94 115.57)
 		)
 		(stroke
@@ -5607,6 +6083,16 @@
 	)
 	(wire
 		(pts
+			(xy 63.5 49.53) (xy 66.04 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4a4588ba-94a0-409f-beb6-b1fbbe868835")
+	)
+	(wire
+		(pts
 			(xy 167.64 82.55) (xy 190.5 82.55)
 		)
 		(stroke
@@ -5614,6 +6100,16 @@
 			(type default)
 		)
 		(uuid "4d008c43-fc1a-4273-978b-629dc0e45d35")
+	)
+	(wire
+		(pts
+			(xy 86.36 49.53) (xy 87.63 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4f7e2b0c-e4d0-46b3-8240-ad70053dc329")
 	)
 	(wire
 		(pts
@@ -5647,13 +6143,23 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 27.94) (xy 60.96 29.21)
+			(xy 72.39 25.4) (xy 72.39 26.67)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "5730c734-edd1-40a5-84f0-9556f481e865")
+	)
+	(wire
+		(pts
+			(xy 78.74 57.15) (xy 78.74 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5a999ec8-87ce-445c-83c2-b4156ff39593")
 	)
 	(wire
 		(pts
@@ -5677,7 +6183,7 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 29.21) (xy 91.44 29.21)
+			(xy 96.52 26.67) (xy 102.87 26.67)
 		)
 		(stroke
 			(width 0)
@@ -5767,6 +6273,16 @@
 	)
 	(wire
 		(pts
+			(xy 66.04 49.53) (xy 69.85 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e3a76a2-0841-4bd8-8f21-b48e85467db6")
+	)
+	(wire
+		(pts
 			(xy 271.78 45.72) (xy 274.32 43.18)
 		)
 		(stroke
@@ -5774,6 +6290,16 @@
 			(type default)
 		)
 		(uuid "6ed02d29-092f-48af-9aea-ece8c084c496")
+	)
+	(wire
+		(pts
+			(xy 87.63 49.53) (xy 90.17 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7000b335-3942-4c12-8f73-ae1b1eb3fd1d")
 	)
 	(wire
 		(pts
@@ -5797,7 +6323,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 29.21) (xy 91.44 27.94)
+			(xy 102.87 26.67) (xy 102.87 25.4)
 		)
 		(stroke
 			(width 0)
@@ -5847,7 +6373,7 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 36.83) (xy 76.2 38.1)
+			(xy 87.63 34.29) (xy 87.63 35.56)
 		)
 		(stroke
 			(width 0)
@@ -5864,6 +6390,16 @@
 			(type default)
 		)
 		(uuid "843fa884-f6d2-476f-aaa7-332213c0dac1")
+	)
+	(wire
+		(pts
+			(xy 69.85 43.18) (xy 69.85 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "86b1f745-0559-44b7-a479-b9823359f21d")
 	)
 	(wire
 		(pts
@@ -5887,7 +6423,7 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 29.21) (xy 85.09 29.21)
+			(xy 95.25 26.67) (xy 96.52 26.67)
 		)
 		(stroke
 			(width 0)
@@ -5904,6 +6440,56 @@
 			(type default)
 		)
 		(uuid "95ac2342-576a-4fc0-ba5e-b6e92d88f41e")
+	)
+	(wire
+		(pts
+			(xy 90.17 49.53) (xy 93.98 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "95b682a2-6b1d-4c5d-bfa2-e946a82c7f14")
+	)
+	(wire
+		(pts
+			(xy 90.17 52.07) (xy 90.17 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9816cc87-7896-49d0-bb50-cb161f3bba39")
+	)
+	(wire
+		(pts
+			(xy 81.28 43.18) (xy 87.63 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c0b2c14-47fd-4dd8-91fd-8342c7f3cc8f")
+	)
+	(wire
+		(pts
+			(xy 78.74 34.29) (xy 87.63 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a1d2e97f-ae1a-4f8a-970d-12108fe85b3b")
+	)
+	(wire
+		(pts
+			(xy 93.98 49.53) (xy 93.98 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a4ce116c-34d5-49fe-8e0f-375f1ac10d37")
 	)
 	(wire
 		(pts
@@ -5957,13 +6543,23 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 29.21) (xy 67.31 29.21)
+			(xy 72.39 26.67) (xy 78.74 26.67)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "b58c747d-46b0-4f6b-aa55-87db86acf43f")
+	)
+	(wire
+		(pts
+			(xy 76.2 43.18) (xy 69.85 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b99a6e83-dd6f-461f-9b3c-4e64f9d40ed8")
 	)
 	(wire
 		(pts
@@ -5974,6 +6570,16 @@
 			(type default)
 		)
 		(uuid "bba43bb3-3774-428b-844c-d904375fb55b")
+	)
+	(wire
+		(pts
+			(xy 78.74 33.02) (xy 78.74 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c02c3e70-067f-4ddc-ad09-743e5870bc8f")
 	)
 	(wire
 		(pts
@@ -6057,7 +6663,37 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 22.86) (xy 67.31 29.21)
+			(xy 66.04 49.53) (xy 66.04 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d73fd1c8-cb4b-483e-8e31-0a2687b54920")
+	)
+	(wire
+		(pts
+			(xy 87.63 43.18) (xy 87.63 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d9d72d67-65d8-4708-a8a8-47e4da0ff645")
+	)
+	(wire
+		(pts
+			(xy 63.5 48.26) (xy 63.5 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "da5ae099-93d0-46b3-9dcf-6e264e5d3705")
+	)
+	(wire
+		(pts
+			(xy 78.74 20.32) (xy 78.74 26.67)
 		)
 		(stroke
 			(width 0)
@@ -6104,6 +6740,16 @@
 			(type default)
 		)
 		(uuid "e8167642-b55a-420d-82d5-11673654dbc0")
+	)
+	(wire
+		(pts
+			(xy 66.04 57.15) (xy 66.04 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eba01bd7-1f92-407f-b4d0-90ecfda5923e")
 	)
 	(wire
 		(pts
@@ -6157,7 +6803,7 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 29.21) (xy 68.58 29.21)
+			(xy 78.74 26.67) (xy 80.01 26.67)
 		)
 		(stroke
 			(width 0)
@@ -6697,7 +7343,7 @@
 	)
 	(global_label "BotNum02"
 		(shape input)
-		(at 123.19 24.13 180)
+		(at 149.86 26.67 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6707,7 +7353,7 @@
 		)
 		(uuid "4375b570-0faa-4efe-9e22-2e9dacab61e5")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 110.4683 24.13 0)
+			(at 137.1383 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7643,7 +8289,7 @@
 	)
 	(global_label "BotNum01"
 		(shape input)
-		(at 123.19 26.67 180)
+		(at 149.86 29.21 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7653,7 +8299,7 @@
 		)
 		(uuid "ecdb5744-ab54-48ef-9e75-32df7283cabd")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 110.4683 26.67 0)
+			(at 137.1383 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7831,6 +8477,142 @@
 			(project "MainBoard-PAMI-2025"
 				(path "/d3e1aeb6-1412-4438-ac7d-372534bf2609"
 					(reference "H1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Polarized_Small")
+		(at 66.04 54.61 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "07424f23-5ce5-41d8-9f6c-0e5219080357")
+		(property "Reference" "C1"
+			(at 68.58 52.7938 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10uF"
+			(at 68.58 55.3338 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:CP_Elec_5x5.4"
+			(at 66.04 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 66.04 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 66.04 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "25504f9b-c357-4ff5-9aea-67a760c69368")
+		)
+		(pin "2"
+			(uuid "bb70204f-ec7e-4d08-96a1-711b3c11703e")
+		)
+		(instances
+			(project "MainBoard-PAMI-2025"
+				(path "/d3e1aeb6-1412-4438-ac7d-372534bf2609"
+					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5VP")
+		(at 102.87 25.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "089d57da-163b-4740-8ae3-162ddfac3a6d")
+		(property "Reference" "#PWR030"
+			(at 102.87 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5VP"
+			(at 102.87 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 102.87 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 102.87 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5VP\""
+			(at 102.87 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b294fec6-7e77-4cb3-9f2e-d20315e3cbee")
+		)
+		(instances
+			(project "MainBoard-PAMI-2025"
+				(path "/d3e1aeb6-1412-4438-ac7d-372534bf2609"
+					(reference "#PWR030")
 					(unit 1)
 				)
 			)
@@ -8222,7 +9004,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PAMI-2025:LP-e6 Batterie"
+		(property "Footprint" "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical"
 			(at 17.78 35.56 0)
 			(effects
 				(font
@@ -8259,6 +9041,72 @@
 			(project "MainBoard-PAMI-2025"
 				(path "/d3e1aeb6-1412-4438-ac7d-372534bf2609"
 					(reference "J11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+9V")
+		(at 63.5 48.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1a7dffe8-2873-474b-9121-c9372d270b64")
+		(property "Reference" "#PWR09"
+			(at 63.5 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+9V"
+			(at 63.5 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 63.5 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 63.5 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+9V\""
+			(at 63.5 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f8cb1462-33dd-4609-a2b3-7dc3d3579ced")
+		)
+		(instances
+			(project "MainBoard-PAMI-2025"
+				(path "/d3e1aeb6-1412-4438-ac7d-372534bf2609"
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -8407,7 +9255,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 138.43 26.67 0)
+		(at 165.1 29.21 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8416,7 +9264,7 @@
 		(fields_autoplaced yes)
 		(uuid "1d21998c-b082-45fc-a97f-4ecd0079c5c3")
 		(property "Reference" "#PWR054"
-			(at 138.43 33.02 0)
+			(at 165.1 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8425,7 +9273,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 138.43 31.75 0)
+			(at 165.1 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8433,7 +9281,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 138.43 26.67 0)
+			(at 165.1 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8442,7 +9290,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 138.43 26.67 0)
+			(at 165.1 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8451,7 +9299,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 138.43 26.67 0)
+			(at 165.1 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8951,73 +9799,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
-		(at 68.58 158.75 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "302c53b3-e136-4776-822d-dc384cd1f602")
-		(property "Reference" "#PWR01"
-			(at 64.77 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 72.39 158.7499 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 68.58 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 68.58 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 68.58 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3a268140-06d9-46d9-95c3-000aed94d6b9")
-		)
-		(instances
-			(project "MainBoard-PAMI-2025"
-				(path "/d3e1aeb6-1412-4438-ac7d-372534bf2609"
-					(reference "#PWR01")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+BATT")
 		(at 20.32 44.45 0)
 		(unit 1)
@@ -9298,78 +10079,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5VP")
-		(at 276.86 81.28 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "378876ca-e9f1-44cc-aa72-e0d0b8714194")
-		(property "Reference" "#PWR012"
-			(at 276.86 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5VP"
-			(at 276.86 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 276.86 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 276.86 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 276.86 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "69b771e4-61f0-407e-9dee-1b0d1deb6490")
-		)
-		(instances
-			(project "MainBoard-PAMI-2025"
-				(path "/d3e1aeb6-1412-4438-ac7d-372534bf2609"
-					(reference "#PWR012")
-					(unit 1)
-				)
-			)
-			(project "LidarBoard-2023"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "#PWR0125")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 31.75 182.88 270)
 		(mirror x)
@@ -9585,6 +10294,73 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 90.17 58.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3d2f19f1-a3e1-44f3-bb58-b2492ce3b9da")
+		(property "Reference" "#PWR058"
+			(at 90.17 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 92.71 59.6899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 90.17 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 90.17 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 90.17 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1d187c05-a448-41ab-b7cb-0f2ef0014359")
+		)
+		(instances
+			(project "MainBoard-PAMI-2025"
+				(path "/d3e1aeb6-1412-4438-ac7d-372534bf2609"
+					(reference "#PWR058")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 121.92 148.59 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9651,7 +10427,7 @@
 	)
 	(symbol
 		(lib_id "Regulator_Switching:R-78E3.3-1.0")
-		(at 76.2 29.21 0)
+		(at 87.63 26.67 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9659,15 +10435,15 @@
 		(dnp no)
 		(uuid "3f42e506-5b5a-495b-8287-8d9671deafff")
 		(property "Reference" "U5"
-			(at 83.82 20.066 0)
+			(at 95.25 17.526 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "R-78E3.3-1.0"
-			(at 76.2 25.4 0)
+		(property "Value" "R-78E5.0-1.0"
+			(at 87.63 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9675,7 +10451,7 @@
 			)
 		)
 		(property "Footprint" "Converter_DCDC:Converter_DCDC_RECOM_R-78E-0.5_THT"
-			(at 77.47 35.56 0)
+			(at 88.9 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9686,7 +10462,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.recom-power.com/pdf/Innoline/R-78Exx-1.0.pdf"
-			(at 76.2 29.21 0)
+			(at 87.63 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9695,7 +10471,7 @@
 			)
 		)
 		(property "Description" "1A Step-Down DC/DC-Regulator, 6-28V input, 3.3V fixed Output Voltage, LM78xx replacement, -40°C to +85°C, SIP3"
-			(at 76.2 29.21 0)
+			(at 87.63 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9713,7 +10489,7 @@
 			(uuid "5abf76e3-ce46-4de0-b251-30c4f068a29a")
 		)
 		(instances
-			(project ""
+			(project "MainBoard-PAMI-2025"
 				(path "/d3e1aeb6-1412-4438-ac7d-372534bf2609"
 					(reference "U5")
 					(unit 1)
@@ -9862,6 +10638,139 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 66.04 58.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "42d41dcb-4060-4e06-ab75-1c241111f464")
+		(property "Reference" "#PWR056"
+			(at 66.04 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 68.58 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 66.04 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 66.04 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 66.04 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0e2419a6-f7c5-41b2-9a4b-94ca3c1633f7")
+		)
+		(instances
+			(project "MainBoard-PAMI-2025"
+				(path "/d3e1aeb6-1412-4438-ac7d-372534bf2609"
+					(reference "#PWR056")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5VP")
+		(at 68.58 158.75 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4895da2c-555c-4948-916a-82b965692c96")
+		(property "Reference" "#PWR01"
+			(at 64.77 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5VP"
+			(at 72.39 158.7499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 68.58 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 68.58 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5VP\""
+			(at 68.58 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1395efc7-aad4-4ee9-a9f1-168fccac1fbf")
+		)
+		(instances
+			(project "MainBoard-PAMI-2025"
+				(path "/d3e1aeb6-1412-4438-ac7d-372534bf2609"
+					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 208.28 91.44 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9934,17 +10843,32 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5VP")
-		(at 276.86 31.75 0)
+		(lib_id "Device:D_Small")
+		(at 78.74 43.18 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4eface63-4348-4f4d-b996-80d73137f68e")
-		(property "Reference" "#PWR013"
-			(at 276.86 35.56 0)
+		(uuid "4c041968-7d5d-4bc1-8900-31534e1569bb")
+		(property "Reference" "D9"
+			(at 78.74 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D_Small"
+			(at 78.74 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SMA_Handsoldering"
+			(at 78.74 43.18 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9952,25 +10876,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+5VP"
-			(at 276.86 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 276.86 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 276.86 31.75 0)
+		(property "Datasheet" "~"
+			(at 78.74 43.18 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9979,7 +10886,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 276.86 31.75 0)
+			(at 78.74 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9988,18 +10895,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "f3531c11-21d7-46bc-93f0-9c0a2e501bd2")
+			(uuid "75cb48a5-afc2-4375-b57b-4ae38b29d7f0")
+		)
+		(pin "2"
+			(uuid "325ee5a1-bf07-4e98-b104-f85804937fcb")
 		)
 		(instances
 			(project "MainBoard-PAMI-2025"
 				(path "/d3e1aeb6-1412-4438-ac7d-372534bf2609"
-					(reference "#PWR013")
-					(unit 1)
-				)
-			)
-			(project "LidarBoard-2023"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "#PWR0125")
+					(reference "D9")
 					(unit 1)
 				)
 			)
@@ -10066,78 +10970,6 @@
 			(project "MainBoard-PAMI-2025"
 				(path "/d3e1aeb6-1412-4438-ac7d-372534bf2609"
 					(reference "#PWR019")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5VP")
-		(at 54.61 27.94 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "51fc6bf1-67d7-4808-ad79-35af7c2430b3")
-		(property "Reference" "#PWR018"
-			(at 54.61 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5VP"
-			(at 54.61 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 54.61 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 54.61 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 54.61 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2002b14e-27bf-4134-9097-7a9078ef5056")
-		)
-		(instances
-			(project "MainBoard-PAMI-2025"
-				(path "/d3e1aeb6-1412-4438-ac7d-372534bf2609"
-					(reference "#PWR018")
-					(unit 1)
-				)
-			)
-			(project "LidarBoard-2023"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "#PWR0125")
 					(unit 1)
 				)
 			)
@@ -10363,6 +11195,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 114.3 35.56 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "567bef89-8644-4cec-9a5a-0ee85b2aa34c")
+		(property "Reference" "#PWR060"
+			(at 114.3 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 118.11 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 114.3 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 114.3 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 114.3 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6fe82a1b-4211-499f-aa2e-8a7bb22a728d")
+		)
+		(instances
+			(project "MainBoard-PAMI-2025"
+				(path "/d3e1aeb6-1412-4438-ac7d-372534bf2609"
+					(reference "#PWR060")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Mechanical:MountingHole")
 		(at 266.7 151.13 0)
 		(unit 1)
@@ -10427,74 +11324,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 68.58 173.99 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5a458635-8ffe-47b7-90f2-1f14c699946e")
-		(property "Reference" "#PWR06"
-			(at 64.77 173.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 72.39 173.9899 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 68.58 173.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 68.58 173.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 68.58 173.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1c823076-8183-4401-b73e-5d9b74b2df51")
-		)
-		(instances
-			(project "MainBoard-PAMI-2025"
-				(path "/d3e1aeb6-1412-4438-ac7d-372534bf2609"
-					(reference "#PWR06")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 97.79 27.94 0)
+		(at 124.46 25.4 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10502,7 +11332,7 @@
 		(dnp no)
 		(uuid "5e3f1b35-bfb4-4d29-a27d-2fd4f8aa54a7")
 		(property "Reference" "#PWR020"
-			(at 97.79 31.75 0)
+			(at 124.46 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10511,7 +11341,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 99.568 22.606 0)
+			(at 126.238 20.066 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10519,7 +11349,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 97.79 27.94 0)
+			(at 124.46 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10528,7 +11358,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 97.79 27.94 0)
+			(at 124.46 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10537,7 +11367,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 97.79 27.94 0)
+			(at 124.46 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10774,7 +11604,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 76.2 38.1 0)
+		(at 87.63 35.56 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10783,7 +11613,7 @@
 		(fields_autoplaced yes)
 		(uuid "68bb24ea-8c6a-46f4-bbc9-7155dd28f0bd")
 		(property "Reference" "#PWR07"
-			(at 76.2 44.45 0)
+			(at 87.63 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10792,7 +11622,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 78.74 39.3699 0)
+			(at 90.17 36.8299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10801,7 +11631,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 76.2 38.1 0)
+			(at 87.63 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10810,7 +11640,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 76.2 38.1 0)
+			(at 87.63 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10819,7 +11649,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 76.2 38.1 0)
+			(at 87.63 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11322,7 +12152,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 54.61 30.48 180)
+		(at 60.96 26.67 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11331,7 +12161,7 @@
 		(fields_autoplaced yes)
 		(uuid "77be146d-a35c-4c44-a330-85cd3e0559ea")
 		(property "Reference" "R2"
-			(at 52.07 31.75 0)
+			(at 58.42 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11340,7 +12170,7 @@
 			)
 		)
 		(property "Value" "1K"
-			(at 52.07 29.21 0)
+			(at 58.42 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11349,7 +12179,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
-			(at 54.61 30.48 0)
+			(at 60.96 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11358,7 +12188,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 54.61 30.48 0)
+			(at 60.96 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11367,7 +12197,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 54.61 30.48 0)
+			(at 60.96 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11595,6 +12425,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+9V")
+		(at 276.86 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7a56d2a8-daad-4901-b2c6-aa9765d330a1")
+		(property "Reference" "#PWR05"
+			(at 276.86 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+9V"
+			(at 276.86 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 276.86 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 276.86 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+9V\""
+			(at 276.86 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "722bd003-b7b2-46ab-acda-9c12b8ab634d")
+		)
+		(instances
+			(project "MainBoard-PAMI-2025"
+				(path "/d3e1aeb6-1412-4438-ac7d-372534bf2609"
+					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 200.66 64.77 180)
 		(unit 1)
@@ -11661,6 +12557,73 @@
 			(project "LidarBoard-2023"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "#PWR0124")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5VP")
+		(at 68.58 173.99 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7d367444-96aa-4bf2-8925-c4b3880a8378")
+		(property "Reference" "#PWR06"
+			(at 64.77 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5VP"
+			(at 72.39 173.9899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 68.58 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 68.58 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5VP\""
+			(at 68.58 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6cc5b616-64f9-422a-aaba-488215bf2a70")
+		)
+		(instances
+			(project "MainBoard-PAMI-2025"
+				(path "/d3e1aeb6-1412-4438-ac7d-372534bf2609"
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -11804,6 +12767,72 @@
 			(project "LidarBoard-2023"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "#PWR0126")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+9V")
+		(at 72.39 25.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "810f0595-d949-4121-8526-9de4ff96ea68")
+		(property "Reference" "#PWR055"
+			(at 72.39 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+9V"
+			(at 72.39 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 72.39 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 72.39 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+9V\""
+			(at 72.39 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e28334f1-9350-4444-95d7-1ad6ddb87cb1")
+		)
+		(instances
+			(project "MainBoard-PAMI-2025"
+				(path "/d3e1aeb6-1412-4438-ac7d-372534bf2609"
+					(reference "#PWR055")
 					(unit 1)
 				)
 			)
@@ -11963,32 +12992,35 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D_Small")
-		(at 76.2 22.86 0)
+		(lib_id "Device:R_Small")
+		(at 114.3 27.94 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "94bd2b03-5eca-4190-a215-bfee36d34af4")
-		(property "Reference" "D2"
-			(at 76.2 17.78 0)
+		(fields_autoplaced yes)
+		(uuid "909b8e30-331e-41dc-b05a-a6c57fbfb501")
+		(property "Reference" "R13"
+			(at 116.84 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
-		(property "Value" "D_Small"
-			(at 76.2 20.32 0)
+		(property "Value" "1K"
+			(at 116.84 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SMA_Handsoldering"
-			(at 76.2 22.86 90)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+			(at 114.3 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11997,7 +13029,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 76.2 22.86 90)
+			(at 114.3 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12006,7 +13038,140 @@
 			)
 		)
 		(property "Description" ""
-			(at 76.2 22.86 0)
+			(at 114.3 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d3a97e36-4175-476a-91a1-f91905e53ddb")
+		)
+		(pin "2"
+			(uuid "6e62e2f3-87c2-452f-8370-9f9683ff9b6f")
+		)
+		(instances
+			(project "MainBoard-PAMI-2025"
+				(path "/d3e1aeb6-1412-4438-ac7d-372534bf2609"
+					(reference "R13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+9V")
+		(at 210.82 21.59 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "92cfbb65-60a8-460e-b9e0-90fb07cf79d0")
+		(property "Reference" "#PWR013"
+			(at 210.82 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+9V"
+			(at 210.82 16.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 210.82 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 210.82 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+9V\""
+			(at 210.82 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "963a8142-930b-4c73-8eb7-e122ea35e4f4")
+		)
+		(instances
+			(project "MainBoard-PAMI-2025"
+				(path "/d3e1aeb6-1412-4438-ac7d-372534bf2609"
+					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Small")
+		(at 87.63 20.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "94bd2b03-5eca-4190-a215-bfee36d34af4")
+		(property "Reference" "D2"
+			(at 87.63 15.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D_Small"
+			(at 87.63 17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SMA_Handsoldering"
+			(at 87.63 20.32 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 87.63 20.32 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 87.63 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12225,89 +13390,16 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5VP")
-		(at 210.82 21.59 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "96388c8f-ba60-4544-9917-b9b81c0fbdfc")
-		(property "Reference" "#PWR040"
-			(at 210.82 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5VP"
-			(at 210.82 16.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 210.82 21.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 210.82 21.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 210.82 21.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "5a18efea-aace-46a4-ae33-2d4db7b623b5")
-		)
-		(instances
-			(project "MainBoard-PAMI-2025"
-				(path "/d3e1aeb6-1412-4438-ac7d-372534bf2609"
-					(reference "#PWR040")
-					(unit 1)
-				)
-			)
-			(project "LidarBoard-2023"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "#PWR0125")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:LED_Small")
-		(at 97.79 35.56 90)
+		(at 124.46 33.02 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "985b1bf1-76ed-422e-b903-6103d3524ca8")
 		(property "Reference" "D5"
-			(at 100.33 34.2265 90)
+			(at 127 31.6865 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12316,7 +13408,7 @@
 			)
 		)
 		(property "Value" "Green"
-			(at 100.33 36.7665 90)
+			(at 127 34.2265 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12325,7 +13417,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_1206_3216Metric"
-			(at 97.79 35.56 90)
+			(at 124.46 33.02 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12334,7 +13426,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 97.79 35.56 90)
+			(at 124.46 33.02 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12343,7 +13435,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 97.79 35.56 0)
+			(at 124.46 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12361,6 +13453,73 @@
 			(project "MainBoard-PAMI-2025"
 				(path "/d3e1aeb6-1412-4438-ac7d-372534bf2609"
 					(reference "D5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 78.74 58.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "992b1098-f842-4f4f-ba56-70356bdeffd8")
+		(property "Reference" "#PWR057"
+			(at 78.74 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 81.28 59.6899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 78.74 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 78.74 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 78.74 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c7301cee-510f-4477-9840-66d38ceb439b")
+		)
+		(instances
+			(project "MainBoard-PAMI-2025"
+				(path "/d3e1aeb6-1412-4438-ac7d-372534bf2609"
+					(reference "#PWR057")
 					(unit 1)
 				)
 			)
@@ -12501,78 +13660,6 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 91.44 27.94 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9b70100d-7f4e-4348-a3bc-621a879eb2ce")
-		(property "Reference" "#PWR09"
-			(at 91.44 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 91.44 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 91.44 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 91.44 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 91.44 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "bf4b378a-c39a-43df-ad10-ac1970b9dadc")
-		)
-		(instances
-			(project "MainBoard-PAMI-2025"
-				(path "/d3e1aeb6-1412-4438-ac7d-372534bf2609"
-					(reference "#PWR09")
-					(unit 1)
-				)
-			)
-			(project "LidarBoard-2023"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "#PWR0126")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
 		(at 119.38 173.99 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12638,8 +13725,74 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+9V")
+		(at 276.86 31.75 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a2010cff-e202-4e38-80b8-33b2fccdbb88")
+		(property "Reference" "#PWR012"
+			(at 276.86 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+9V"
+			(at 276.86 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 276.86 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 276.86 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+9V\""
+			(at 276.86 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bb03b0f1-9d3c-4989-bf52-bff3b7cd4fb5")
+		)
+		(instances
+			(project "MainBoard-PAMI-2025"
+				(path "/d3e1aeb6-1412-4438-ac7d-372534bf2609"
+					(reference "#PWR012")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Switch:SW_DIP_x02")
-		(at 130.81 26.67 0)
+		(at 157.48 29.21 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12647,7 +13800,7 @@
 		(dnp no)
 		(uuid "a60af3ff-0be9-4e81-ac7c-9bd19ea7f9ea")
 		(property "Reference" "SW4"
-			(at 130.81 16.51 0)
+			(at 157.48 19.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12655,7 +13808,7 @@
 			)
 		)
 		(property "Value" "SW_DIP_x02"
-			(at 130.81 19.05 0)
+			(at 157.48 21.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12663,7 +13816,7 @@
 			)
 		)
 		(property "Footprint" "Button_Switch_THT:SW_DIP_SPSTx02_Slide_9.78x7.26mm_W7.62mm_P2.54mm"
-			(at 130.81 26.67 0)
+			(at 157.48 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12672,7 +13825,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 130.81 26.67 0)
+			(at 157.48 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12681,7 +13834,7 @@
 			)
 		)
 		(property "Description" "2x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
-			(at 130.81 26.67 0)
+			(at 157.48 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12702,7 +13855,7 @@
 			(uuid "1a42d316-9f3e-4476-b579-c82f889b8448")
 		)
 		(instances
-			(project ""
+			(project "MainBoard-PAMI-2025"
 				(path "/d3e1aeb6-1412-4438-ac7d-372534bf2609"
 					(reference "SW4")
 					(unit 1)
@@ -12746,7 +13899,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.fr/datasheet/2/295/ubnonilluminated-1507076.pdf"
 			(at 31.75 33.02 0)
 			(effects
 				(font
@@ -12783,16 +13936,17 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 97.79 38.1 0)
+		(lib_id "power:+9V")
+		(at 60.96 24.13 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "a9b25b97-4bf9-4f2b-9369-1670e168f16a")
-		(property "Reference" "#PWR021"
-			(at 97.79 44.45 0)
+		(fields_autoplaced yes)
+		(uuid "a75b431f-0a78-49e1-a62f-ade9859e2c1d")
+		(property "Reference" "#PWR043"
+			(at 60.96 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12800,8 +13954,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND"
-			(at 101.6 39.37 0)
+		(property "Value" "+9V"
+			(at 60.96 19.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12809,7 +13963,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 97.79 38.1 0)
+			(at 60.96 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12818,7 +13972,72 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 97.79 38.1 0)
+			(at 60.96 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+9V\""
+			(at 60.96 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5f2cf6b5-b986-489d-acbe-7c47c2f9df48")
+		)
+		(instances
+			(project "MainBoard-PAMI-2025"
+				(path "/d3e1aeb6-1412-4438-ac7d-372534bf2609"
+					(reference "#PWR043")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 124.46 35.56 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a9b25b97-4bf9-4f2b-9369-1670e168f16a")
+		(property "Reference" "#PWR021"
+			(at 124.46 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 128.27 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 124.46 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 124.46 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12827,7 +14046,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 97.79 38.1 0)
+			(at 124.46 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13117,6 +14336,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+9V")
+		(at 39.37 35.56 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b6372bdf-c5d7-4767-b356-61c1f7c6d441")
+		(property "Reference" "#PWR018"
+			(at 39.37 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+9V"
+			(at 39.37 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 39.37 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 39.37 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+9V\""
+			(at 39.37 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "02bca727-cff1-47f3-a4a1-77c419df7a99")
+		)
+		(instances
+			(project "MainBoard-PAMI-2025"
+				(path "/d3e1aeb6-1412-4438-ac7d-372534bf2609"
+					(reference "#PWR018")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 271.78 113.03 0)
 		(unit 1)
@@ -13399,7 +14684,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED_Small")
-		(at 54.61 35.56 90)
+		(at 60.96 31.75 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13408,7 +14693,7 @@
 		(fields_autoplaced yes)
 		(uuid "c06f58bf-1a4c-4e06-bbf5-c88f9ce2ed7f")
 		(property "Reference" "D4"
-			(at 52.07 36.7665 90)
+			(at 58.42 32.9565 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13417,7 +14702,7 @@
 			)
 		)
 		(property "Value" "Red"
-			(at 52.07 34.2265 90)
+			(at 58.42 30.4165 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13426,7 +14711,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_1206_3216Metric"
-			(at 54.61 35.56 90)
+			(at 60.96 31.75 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13435,7 +14720,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 54.61 35.56 90)
+			(at 60.96 31.75 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13444,7 +14729,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 54.61 35.56 0)
+			(at 60.96 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13462,77 +14747,6 @@
 			(project "MainBoard-PAMI-2025"
 				(path "/d3e1aeb6-1412-4438-ac7d-372534bf2609"
 					(reference "D4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5VP")
-		(at 39.37 35.56 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "c0ce2b8e-ae2b-452c-93a3-542c46976875")
-		(property "Reference" "#PWR043"
-			(at 39.37 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5VP"
-			(at 42.672 32.512 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 39.37 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 39.37 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 39.37 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "fcfa6a69-26a6-42d6-a9b8-cf831a9ec6d1")
-		)
-		(instances
-			(project "MainBoard-PAMI-2025"
-				(path "/d3e1aeb6-1412-4438-ac7d-372534bf2609"
-					(reference "#PWR043")
-					(unit 1)
-				)
-			)
-			(project "LidarBoard-2023"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "#PWR0125")
 					(unit 1)
 				)
 			)
@@ -14145,6 +15359,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Regulator_Linear:AMS1117-3.3")
+		(at 78.74 49.53 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d01171ec-ab3c-4e47-9005-50365e931a3e")
+		(property "Reference" "U2"
+			(at 82.55 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "AMS1117-3.3"
+			(at 78.8049 46.4915 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
+			(at 78.74 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.advanced-monolithic.com/pdf/ds1117.pdf"
+			(at 81.28 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 78.74 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3e714467-57d6-438f-97e6-0492934e4900")
+		)
+		(pin "2"
+			(uuid "af2c8c79-086e-4ca8-884c-f93e23a2f497")
+		)
+		(pin "3"
+			(uuid "e2fdb988-e292-4c2b-a4cb-969bf32c907a")
+		)
+		(instances
+			(project "MainBoard-PAMI-2025"
+				(path "/d3e1aeb6-1412-4438-ac7d-372534bf2609"
+					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 101.6 175.26 0)
 		(unit 1)
@@ -14208,6 +15492,76 @@
 			(project "MainBoard-PAMI-2025"
 				(path "/d3e1aeb6-1412-4438-ac7d-372534bf2609"
 					(reference "C5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Polarized_Small")
+		(at 90.17 54.61 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d336ea83-a2ec-4ad7-92be-60d9c5b706a3")
+		(property "Reference" "C2"
+			(at 92.71 52.7938 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22uF"
+			(at 92.71 55.3338 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3528-12_Kemet-T_Pad1.50x2.35mm_HandSolder"
+			(at 90.17 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 90.17 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 90.17 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2b118ccd-f673-4114-8108-ae26754e63a4")
+		)
+		(pin "2"
+			(uuid "a4c547c9-44b7-4506-8623-7377d0f52858")
+		)
+		(instances
+			(project "MainBoard-PAMI-2025"
+				(path "/d3e1aeb6-1412-4438-ac7d-372534bf2609"
+					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -14344,6 +15698,141 @@
 			(project "MainBoard-PAMI-2025"
 				(path "/d3e1aeb6-1412-4438-ac7d-372534bf2609"
 					(reference "D8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Small")
+		(at 114.3 33.02 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "dbfec435-e90b-4992-ae51-8ccb74d6981a")
+		(property "Reference" "D10"
+			(at 116.84 31.6865 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Green"
+			(at 116.84 34.2265 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_1206_3216Metric"
+			(at 114.3 33.02 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 114.3 33.02 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 114.3 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "38ba09c2-d8ae-43e5-806b-be08466fcd47")
+		)
+		(pin "2"
+			(uuid "3e430e7f-a517-4858-80a4-cfd64bedb36d")
+		)
+		(instances
+			(project "MainBoard-PAMI-2025"
+				(path "/d3e1aeb6-1412-4438-ac7d-372534bf2609"
+					(reference "D10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5VP")
+		(at 114.3 25.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "df4d3ba0-bf20-4445-a716-d97686ea54f3")
+		(property "Reference" "#PWR040"
+			(at 114.3 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5VP"
+			(at 114.3 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 114.3 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 114.3 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5VP\""
+			(at 114.3 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2e0784ae-89a0-487f-8800-a21f7838f576")
+		)
+		(instances
+			(project "MainBoard-PAMI-2025"
+				(path "/d3e1aeb6-1412-4438-ac7d-372534bf2609"
+					(reference "#PWR040")
 					(unit 1)
 				)
 			)
@@ -14493,7 +15982,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 97.79 30.48 180)
+		(at 124.46 27.94 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14502,7 +15991,7 @@
 		(fields_autoplaced yes)
 		(uuid "e4bc10ee-ef83-4461-a02d-12f5425be4f6")
 		(property "Reference" "R4"
-			(at 100.33 29.21 0)
+			(at 127 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14511,7 +16000,7 @@
 			)
 		)
 		(property "Value" "1K"
-			(at 100.33 31.75 0)
+			(at 127 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14520,7 +16009,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
-			(at 97.79 30.48 0)
+			(at 124.46 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14529,7 +16018,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 97.79 30.48 0)
+			(at 124.46 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14538,7 +16027,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 97.79 30.48 0)
+			(at 124.46 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14589,7 +16078,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical"
+		(property "Footprint" "PAMI-2025:VL53 Bottom Entry Version"
 			(at 36.83 185.42 0)
 			(effects
 				(font
@@ -14644,6 +16133,141 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:CP_Small")
+		(at 78.74 30.48 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e993eb5c-d288-437a-bf47-048f83361184")
+		(property "Reference" "C11"
+			(at 72.644 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22uF"
+			(at 72.39 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:CP_Elec_5x5.4"
+			(at 78.74 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 78.74 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 78.74 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "73d86671-66d8-4366-a767-56e76432cf01")
+		)
+		(pin "2"
+			(uuid "78f982b9-6806-4635-a0ba-097106154c27")
+		)
+		(instances
+			(project "MainBoard-PAMI-2025"
+				(path "/d3e1aeb6-1412-4438-ac7d-372534bf2609"
+					(reference "C11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 93.98 48.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "edd5ff03-8c50-4b3a-b624-c8b36d7acd75")
+		(property "Reference" "#PWR059"
+			(at 93.98 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 93.98 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 93.98 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 93.98 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 93.98 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6a56b22f-8eca-4ebb-beac-43892085d68c")
+		)
+		(instances
+			(project "MainBoard-PAMI-2025"
+				(path "/d3e1aeb6-1412-4438-ac7d-372534bf2609"
+					(reference "#PWR059")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector_Generic:Conn_01x06")
 		(at 36.83 167.64 0)
 		(unit 1)
@@ -14671,7 +16295,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical"
+		(property "Footprint" "PAMI-2025:VL53 Bottom Entry Version"
 			(at 36.83 167.64 0)
 			(effects
 				(font
@@ -15257,78 +16881,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5VP")
-		(at 60.96 27.94 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "fc66222d-61bf-4aed-9cd2-6d99bfe37347")
-		(property "Reference" "#PWR05"
-			(at 60.96 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5VP"
-			(at 60.96 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 60.96 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 60.96 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 60.96 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c2545e59-905f-47d0-8e69-ea6f597a2898")
-		)
-		(instances
-			(project "MainBoard-PAMI-2025"
-				(path "/d3e1aeb6-1412-4438-ac7d-372534bf2609"
-					(reference "#PWR05")
-					(unit 1)
-				)
-			)
-			(project "LidarBoard-2023"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "#PWR0125")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 31.75 165.1 270)
 		(mirror x)
@@ -15424,7 +16976,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical"
+		(property "Footprint" "PAMI-2025:VL53 Bottom Entry Version"
 			(at 36.83 149.86 0)
 			(effects
 				(font
@@ -15480,7 +17032,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 54.61 38.1 0)
+		(at 60.96 34.29 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15488,7 +17040,7 @@
 		(dnp no)
 		(uuid "ffd03ef0-febd-45ba-9946-0f516cdef570")
 		(property "Reference" "#PWR017"
-			(at 54.61 44.45 0)
+			(at 60.96 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15497,7 +17049,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 58.42 39.37 0)
+			(at 64.77 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15505,7 +17057,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 54.61 38.1 0)
+			(at 60.96 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15514,7 +17066,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 54.61 38.1 0)
+			(at 60.96 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15523,7 +17075,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 54.61 38.1 0)
+			(at 60.96 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
