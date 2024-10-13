@@ -2571,23 +2571,23 @@
 				)
 			)
 		)
-		(symbol "Mechanical:MountingHole"
+		(symbol "Mechanical:MountingHole_Pad"
+			(pin_numbers hide)
 			(pin_names
-				(offset 1.016)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
+				(offset 1.016) hide)
+			(exclude_from_sim yes)
+			(in_bom no)
 			(on_board yes)
 			(property "Reference" "H"
-				(at 0 5.08 0)
+				(at 0 6.35 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "MountingHole"
-				(at 0 3.175 0)
+			(property "Value" "MountingHole_Pad"
+				(at 0 4.445 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2612,7 +2612,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Mounting Hole without connection"
+			(property "Description" "Mounting Hole with connection"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2630,7 +2630,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "MountingHole*"
+			(property "ki_fp_filters" "MountingHole*Pad*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2639,9 +2639,9 @@
 					(hide yes)
 				)
 			)
-			(symbol "MountingHole_0_1"
+			(symbol "MountingHole_Pad_0_1"
 				(circle
-					(center 0 0)
+					(center 0 1.27)
 					(radius 1.27)
 					(stroke
 						(width 1.27)
@@ -2649,6 +2649,26 @@
 					)
 					(fill
 						(type none)
+					)
+				)
+			)
+			(symbol "MountingHole_Pad_1_1"
+				(pin input line
+					(at 0 -2.54 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
 					)
 				)
 			)
@@ -5872,6 +5892,12 @@
 		(uuid "62f5a7bb-765b-418c-be87-e5ac3f9fd50e")
 	)
 	(junction
+		(at 261.62 156.21)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "640de39b-3255-4c27-9de0-7533d3e9d34b")
+	)
+	(junction
 		(at 57.15 87.63)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5900,6 +5926,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8671d8de-1a19-452d-9c2b-f01467221584")
+	)
+	(junction
+		(at 261.62 151.13)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "86bda26d-009c-43d1-bdf7-7b280cb04ff8")
 	)
 	(junction
 		(at 266.7 130.81)
@@ -5966,6 +5998,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "db4ee0b6-23d2-4059-99d6-9b50a9dbee4e")
+	)
+	(junction
+		(at 261.62 161.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f1621f1e-c117-4083-97a0-51cd8aad2138")
 	)
 	(no_connect
 		(at 236.22 105.41)
@@ -6227,6 +6265,16 @@
 	)
 	(wire
 		(pts
+			(xy 264.16 146.05) (xy 261.62 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24ab5021-bb58-4da7-addd-c8959bd6a13e")
+	)
+	(wire
+		(pts
 			(xy 207.01 26.67) (xy 210.82 26.67)
 		)
 		(stroke
@@ -6397,6 +6445,16 @@
 	)
 	(wire
 		(pts
+			(xy 261.62 161.29) (xy 261.62 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "409bc3b6-7f5c-48f0-9024-0497b06853af")
+	)
+	(wire
+		(pts
 			(xy 26.67 121.92) (xy 27.94 121.92)
 		)
 		(stroke
@@ -6424,6 +6482,16 @@
 			(type default)
 		)
 		(uuid "45c5ebe1-74b4-486b-90f6-6982a1768896")
+	)
+	(wire
+		(pts
+			(xy 261.62 151.13) (xy 264.16 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "45d4fa5f-2234-4eb3-8b73-5efbe2752c7d")
 	)
 	(wire
 		(pts
@@ -6504,6 +6572,16 @@
 			(type default)
 		)
 		(uuid "5357d857-f2bd-437e-a0cf-379bda61192f")
+	)
+	(wire
+		(pts
+			(xy 261.62 156.21) (xy 261.62 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "537326ba-274d-4176-aa50-23e7b0eca11e")
 	)
 	(wire
 		(pts
@@ -6987,6 +7065,16 @@
 	)
 	(wire
 		(pts
+			(xy 261.62 151.13) (xy 261.62 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf335fb4-bd51-4d4d-9738-da545b5851b5")
+	)
+	(wire
+		(pts
 			(xy 78.74 33.02) (xy 78.74 34.29)
 		)
 		(stroke
@@ -6994,6 +7082,16 @@
 			(type default)
 		)
 		(uuid "c02c3e70-067f-4ddc-ad09-743e5870bc8f")
+	)
+	(wire
+		(pts
+			(xy 261.62 146.05) (xy 261.62 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c0bb8a27-0baf-43b0-8ede-6008757cb21f")
 	)
 	(wire
 		(pts
@@ -7167,6 +7265,16 @@
 	)
 	(wire
 		(pts
+			(xy 261.62 156.21) (xy 264.16 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e2154610-6f9f-408d-8d09-1d67a100a020")
+	)
+	(wire
+		(pts
 			(xy 111.76 62.23) (xy 111.76 63.5)
 		)
 		(stroke
@@ -7184,6 +7292,16 @@
 			(type default)
 		)
 		(uuid "e3c50978-3dbf-412b-9c3a-5b0844b97b28")
+	)
+	(wire
+		(pts
+			(xy 261.62 161.29) (xy 264.16 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e47680f4-7253-4d81-b979-1ae9ccfdf6b9")
 	)
 	(wire
 		(pts
@@ -8850,16 +8968,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 266.7 146.05 0)
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 266.7 146.05 270)
 		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
+		(exclude_from_sim yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "045bae6d-3afa-4253-8e74-fdada8cf8766")
 		(property "Reference" "H1"
-			(at 269.24 144.78 0)
+			(at 270.51 144.7799 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8868,7 +8987,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 269.24 147.32 0)
+			(at 270.51 147.3199 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8876,7 +8995,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
 			(at 266.7 146.05 0)
 			(effects
 				(font
@@ -8894,7 +9013,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Mounting Hole with connection"
 			(at 266.7 146.05 0)
 			(effects
 				(font
@@ -8902,6 +9021,9 @@
 				)
 				(hide yes)
 			)
+		)
+		(pin "1"
+			(uuid "9e845ca9-2d75-44ee-853b-0214113651cc")
 		)
 		(instances
 			(project "MainBoard-PAMI-2025"
@@ -10234,16 +10356,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 266.7 156.21 0)
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 266.7 156.21 270)
 		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
+		(exclude_from_sim yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "297513e9-1f97-4f87-aa21-ac970972091b")
 		(property "Reference" "H3"
-			(at 269.24 154.94 0)
+			(at 270.51 154.9399 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10252,7 +10375,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 269.24 157.48 0)
+			(at 270.51 157.4799 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10260,7 +10383,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
 			(at 266.7 156.21 0)
 			(effects
 				(font
@@ -10278,7 +10401,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Mounting Hole with connection"
 			(at 266.7 156.21 0)
 			(effects
 				(font
@@ -10286,6 +10409,9 @@
 				)
 				(hide yes)
 			)
+		)
+		(pin "1"
+			(uuid "e0d54965-93a8-457c-97e0-8287a47e2fe7")
 		)
 		(instances
 			(project "MainBoard-PAMI-2025"
@@ -11962,16 +12088,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 266.7 151.13 0)
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 266.7 151.13 270)
 		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
+		(exclude_from_sim yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "58c625f4-fc1e-407c-8fe2-fa4d210d8bf9")
 		(property "Reference" "H2"
-			(at 269.24 149.86 0)
+			(at 270.51 149.8599 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11980,7 +12107,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 269.24 152.4 0)
+			(at 270.51 152.3999 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11988,7 +12115,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
 			(at 266.7 151.13 0)
 			(effects
 				(font
@@ -12006,7 +12133,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Mounting Hole with connection"
 			(at 266.7 151.13 0)
 			(effects
 				(font
@@ -12014,6 +12141,9 @@
 				)
 				(hide yes)
 			)
+		)
+		(pin "1"
+			(uuid "2bba93f8-ea0c-4006-bff2-86f9f0ef7029")
 		)
 		(instances
 			(project "MainBoard-PAMI-2025"
@@ -15046,16 +15176,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 266.7 161.29 0)
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 266.7 161.29 270)
 		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
+		(exclude_from_sim yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "ad1f0070-2c9d-4ee7-9ca5-54c6eac8b65e")
 		(property "Reference" "H4"
-			(at 269.24 160.02 0)
+			(at 270.51 160.0199 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15064,7 +15195,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 269.24 162.56 0)
+			(at 270.51 162.5599 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15072,7 +15203,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
 			(at 266.7 161.29 0)
 			(effects
 				(font
@@ -15090,7 +15221,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Mounting Hole with connection"
 			(at 266.7 161.29 0)
 			(effects
 				(font
@@ -15099,10 +15230,79 @@
 				(hide yes)
 			)
 		)
+		(pin "1"
+			(uuid "4cae7fa5-df14-434d-b9a9-5fe2be1a5807")
+		)
 		(instances
 			(project "MainBoard-PAMI-2025"
 				(path "/d3e1aeb6-1412-4438-ac7d-372534bf2609"
 					(reference "H4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 261.62 162.56 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b15028e2-df79-4c99-b038-710fd8cf4014")
+		(property "Reference" "#PWR064"
+			(at 261.62 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 261.62 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 261.62 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 261.62 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 261.62 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "df7834c9-f826-4640-b0d8-40814aeab4c2")
+		)
+		(instances
+			(project "MainBoard-PAMI-2025"
+				(path "/d3e1aeb6-1412-4438-ac7d-372534bf2609"
+					(reference "#PWR064")
 					(unit 1)
 				)
 			)
