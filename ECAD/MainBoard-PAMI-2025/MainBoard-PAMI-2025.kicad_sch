@@ -1089,6 +1089,164 @@
 				)
 			)
 		)
+		(symbol "Device:Buzzer"
+			(pin_names
+				(offset 0.0254) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "BZ"
+				(at 3.81 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "Buzzer"
+				(at 3.81 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at -0.635 2.54 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at -0.635 2.54 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Buzzer, polarized"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "quartz resonator ceramic"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*Buzzer*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Buzzer_0_1"
+				(arc
+					(start 0 -3.175)
+					(mid 3.1612 0)
+					(end 0 3.175)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.651 1.905) (xy -1.143 1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.397 2.159) (xy -1.397 1.651)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 3.175) (xy 0 -3.175)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Buzzer_1_1"
+				(pin passive line
+					(at -2.54 2.54 0)
+					(length 2.54)
+					(name "+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -2.54 -2.54 0)
+					(length 2.54)
+					(name "-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Device:CP_Small"
 			(pin_numbers hide)
 			(pin_names
@@ -1962,6 +2120,187 @@
 					(at 0 -2.54 90)
 					(length 0.762)
 					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Jumper:SolderJumper_2_Open"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim yes)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "JP"
+				(at 0 2.032 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SolderJumper_2_Open"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Solder Jumper, 2-pole, open"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "solder jumper SPST"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SolderJumper*Open*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SolderJumper_2_Open_0_1"
+				(arc
+					(start -0.254 1.016)
+					(mid -1.2656 0)
+					(end -0.254 -1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -0.254 1.016)
+					(mid -1.2656 0)
+					(end -0.254 -1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.254 1.016) (xy -0.254 -1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 1.016) (xy 0.254 -1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0.254 -1.016)
+					(mid 1.2656 0)
+					(end 0.254 1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0.254 -1.016)
+					(mid 1.2656 0)
+					(end 0.254 1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
+			(symbol "SolderJumper_2_Open_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "B"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5566,6 +5905,12 @@
 		(uuid "62f5a7bb-765b-418c-be87-e5ac3f9fd50e")
 	)
 	(junction
+		(at 57.15 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "665ee487-8c1a-4c02-8a2e-196b2a2360fe")
+	)
+	(junction
 		(at 36.83 115.57)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5631,6 +5976,24 @@
 		(color 0 0 0 0)
 		(uuid "d2fce232-db12-4df7-9907-4ce8eceeb130")
 	)
+	(junction
+		(at 41.91 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d4d0580f-b573-41a3-81fa-8f2fa8c26a83")
+	)
+	(junction
+		(at 34.29 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d72f6e1e-964d-4d75-89bc-a4f8b14301a6")
+	)
+	(junction
+		(at 49.53 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "db4ee0b6-23d2-4059-99d6-9b50a9dbee4e")
+	)
 	(no_connect
 		(at 236.22 105.41)
 		(uuid "05a72769-0212-4ffe-b68b-b275aa5aa26c")
@@ -5672,10 +6035,6 @@
 		(uuid "6bce6cf0-6a13-4a34-bbbb-5f4dda28f0eb")
 	)
 	(no_connect
-		(at 271.78 105.41)
-		(uuid "6e4b10ce-35f1-4b3a-891f-6413cb66e028")
-	)
-	(no_connect
 		(at 76.2 138.43)
 		(uuid "7e5cd814-f94c-40c1-8971-e7eda25d65e3")
 	)
@@ -5684,20 +6043,12 @@
 		(uuid "8b53365b-2e87-4ab6-acf4-3eec39a61e87")
 	)
 	(no_connect
-		(at 271.78 87.63)
-		(uuid "a68c114f-75d4-44f5-83c2-28cb6a1e92e7")
-	)
-	(no_connect
 		(at 236.22 107.95)
 		(uuid "b000df8d-9dbf-4aef-a393-206130b6c034")
 	)
 	(no_connect
 		(at 31.75 172.72)
 		(uuid "b31589ae-8805-473c-a98e-e69f779b890d")
-	)
-	(no_connect
-		(at 271.78 107.95)
-		(uuid "b4417100-3fff-469d-807c-20fef369deaf")
 	)
 	(no_connect
 		(at 76.2 143.51)
@@ -5753,6 +6104,16 @@
 	)
 	(wire
 		(pts
+			(xy 57.15 87.63) (xy 57.15 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "03e699a5-eed4-4645-8160-28c8229fe58a")
+	)
+	(wire
+		(pts
 			(xy 266.7 123.19) (xy 266.7 124.46)
 		)
 		(stroke
@@ -5780,6 +6141,16 @@
 			(type default)
 		)
 		(uuid "0b51354e-b43d-47ef-b480-281b72b9e638")
+	)
+	(wire
+		(pts
+			(xy 34.29 87.63) (xy 35.56 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0b975fdd-f601-44ac-8b64-a2041679cc9f")
 	)
 	(wire
 		(pts
@@ -5983,6 +6354,16 @@
 	)
 	(wire
 		(pts
+			(xy 27.94 87.63) (xy 34.29 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "308edab9-27d1-4027-872f-dd7c5cd87e28")
+	)
+	(wire
+		(pts
 			(xy 90.17 57.15) (xy 90.17 58.42)
 		)
 		(stroke
@@ -6063,6 +6444,16 @@
 	)
 	(wire
 		(pts
+			(xy 55.88 87.63) (xy 57.15 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "41b586ce-52f0-47b1-9c76-7aa1ab39e493")
+	)
+	(wire
+		(pts
 			(xy 36.83 115.57) (xy 36.83 121.92)
 		)
 		(stroke
@@ -6070,6 +6461,16 @@
 			(type default)
 		)
 		(uuid "45c5ebe1-74b4-486b-90f6-6982a1768896")
+	)
+	(wire
+		(pts
+			(xy 49.53 87.63) (xy 49.53 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "46c9e171-ffe6-4a7a-963a-e6c6761115d5")
 	)
 	(wire
 		(pts
@@ -6140,6 +6541,16 @@
 			(type default)
 		)
 		(uuid "5595bb2c-b947-46de-b67e-7df57a3b9c52")
+	)
+	(wire
+		(pts
+			(xy 40.64 87.63) (xy 41.91 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "56c9d62f-de33-4a94-a898-665dcc981481")
 	)
 	(wire
 		(pts
@@ -6613,6 +7024,16 @@
 	)
 	(wire
 		(pts
+			(xy 34.29 87.63) (xy 34.29 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d0085077-d9e3-4056-b12a-eabb2cb2613a")
+	)
+	(wire
+		(pts
 			(xy 27.94 124.46) (xy 27.94 121.92)
 		)
 		(stroke
@@ -6630,6 +7051,16 @@
 			(type default)
 		)
 		(uuid "d13f21d2-b263-4a45-92b4-bcb27d8dffca")
+	)
+	(wire
+		(pts
+			(xy 57.15 87.63) (xy 59.69 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d5ef7fce-f3b8-40d7-a909-c77bd7b10283")
 	)
 	(wire
 		(pts
@@ -6670,6 +7101,16 @@
 			(type default)
 		)
 		(uuid "d73fd1c8-cb4b-483e-8e31-0a2687b54920")
+	)
+	(wire
+		(pts
+			(xy 41.91 87.63) (xy 41.91 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d7689372-42cb-4bb4-bbf1-158052d60a20")
 	)
 	(wire
 		(pts
@@ -6783,6 +7224,16 @@
 	)
 	(wire
 		(pts
+			(xy 41.91 87.63) (xy 49.53 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f340cbb6-387e-43c8-977e-4a270c64bcd1")
+	)
+	(wire
+		(pts
 			(xy 34.29 124.46) (xy 36.83 124.46)
 		)
 		(stroke
@@ -6790,6 +7241,16 @@
 			(type default)
 		)
 		(uuid "fb6beeaf-0d10-4f2a-a9ea-6186c51d43fb")
+	)
+	(wire
+		(pts
+			(xy 49.53 87.63) (xy 50.8 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fd70d98c-0236-46e8-ae57-ef73e3ae2be1")
 	)
 	(wire
 		(pts
@@ -7002,28 +7463,6 @@
 		(uuid "0ccf297b-b945-4225-804d-c42e7a13d77e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 221.1833 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "DAC1"
-		(shape input)
-		(at 167.64 125.73 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "127a30b5-e09f-4a13-83db-d7bdf3ca1b84")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 175.4633 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7583,28 +8022,6 @@
 			)
 		)
 	)
-	(global_label "DAC2"
-		(shape input)
-		(at 167.64 128.27 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "6bcec4d4-9654-4b0c-a174-97acd983ad24")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 175.4633 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "RightMS2"
 		(shape input)
 		(at 266.7 137.16 180)
@@ -7913,6 +8330,28 @@
 			)
 		)
 	)
+	(global_label "XSHUT_CENTER"
+		(shape input)
+		(at 167.64 125.73 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9d9fde3d-da19-454c-8bb8-05055aab293b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 184.7765 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "SCL"
 		(shape input)
 		(at 214.63 125.73 0)
@@ -8155,6 +8594,28 @@
 			)
 		)
 	)
+	(global_label "Buzzer"
+		(shape input)
+		(at 167.64 128.27 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d1294c81-a2cd-4825-b7a1-e10ec8f653b7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 176.9752 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "SCL"
 		(shape input)
 		(at 31.75 185.42 180)
@@ -8212,6 +8673,28 @@
 		(uuid "e081585c-9e4c-4928-ad2a-c63ca051ea1d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 133.9161 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Buzzer"
+		(shape input)
+		(at 59.69 87.63 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e1babd31-1005-4405-8a82-6012de3a74fe")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 69.1203 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10360,6 +10843,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small")
+		(at 53.34 87.63 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3db5c1da-79b4-4d2d-bceb-c71b24bceb34")
+		(property "Reference" "R14"
+			(at 53.34 82.55 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "330"
+			(at 53.34 85.09 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+			(at 53.34 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 53.34 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 53.34 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "98e0d8d3-b37e-471e-ab32-6314a2bf5517")
+		)
+		(pin "2"
+			(uuid "1931d8f9-c9e0-4797-a133-2bf530b09106")
+		)
+		(instances
+			(project "MainBoard-PAMI-2025"
+				(path "/d3e1aeb6-1412-4438-ac7d-372534bf2609"
+					(reference "R14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 121.92 148.59 0)
 		(unit 1)
@@ -11003,7 +11554,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D8.0mm_P3.80mm"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm"
 			(at 210.82 24.13 0)
 			(effects
 				(font
@@ -11012,7 +11563,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://fr.rs-online.com/web/p/condensateurs-electrolytiques-aluminium/7060582"
 			(at 210.82 24.13 0)
 			(effects
 				(font
@@ -11189,6 +11740,74 @@
 			(project "MainBoard-PAMI-2025"
 				(path "/d3e1aeb6-1412-4438-ac7d-372534bf2609"
 					(reference "#PWR053")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Jumper:SolderJumper_2_Open")
+		(at 53.34 92.71 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "55ddcb83-cab4-4c81-9f67-1fc8bfedb4f9")
+		(property "Reference" "JP2"
+			(at 53.34 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SolderJumper_2_Open"
+			(at 53.34 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
+			(at 53.34 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 53.34 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Solder Jumper, 2-pole, open"
+			(at 53.34 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "41618574-611a-4223-8ca0-4d6e1758d3c3")
+		)
+		(pin "1"
+			(uuid "43ff33ff-5f26-454b-a475-1703c8a0e270")
+		)
+		(instances
+			(project "MainBoard-PAMI-2025"
+				(path "/d3e1aeb6-1412-4438-ac7d-372534bf2609"
+					(reference "JP2")
 					(unit 1)
 				)
 			)
@@ -12922,35 +13541,33 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Polarized_Small")
-		(at 207.01 24.13 0)
+		(lib_id "Device:CP_Small")
+		(at 38.1 87.63 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "88492791-42bf-42fc-981e-53ced777adeb")
-		(property "Reference" "C7"
-			(at 204.47 22.3139 0)
+		(uuid "8783a105-5a88-4255-a455-d0e53f32e641")
+		(property "Reference" "C12"
+			(at 38.6461 81.28 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Value" "100uF"
-			(at 204.47 24.8539 0)
+			(at 38.6461 83.82 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D8.0mm_P3.80mm"
-			(at 207.01 24.13 0)
+		(property "Footprint" "Capacitor_SMD:CP_Elec_5x5.4"
+			(at 38.1 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12959,7 +13576,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 207.01 24.13 0)
+			(at 38.1 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12968,7 +13585,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 207.01 24.13 0)
+			(at 38.1 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12977,15 +13594,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "98aafb56-6289-4f07-8d17-c2d5bf89046e")
+			(uuid "a401c143-690f-42de-8cdc-8223ebd067b8")
 		)
 		(pin "2"
-			(uuid "f7d4ee56-d2f4-4f95-b561-e3cce6c11e71")
+			(uuid "69a88018-d7a3-4496-aa99-54df1dec89e0")
 		)
 		(instances
 			(project "MainBoard-PAMI-2025"
 				(path "/d3e1aeb6-1412-4438-ac7d-372534bf2609"
-					(reference "C7")
+					(reference "C12")
 					(unit 1)
 				)
 			)
@@ -13725,6 +14342,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Polarized_Small")
+		(at 207.01 24.13 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a1a39ca6-d866-4396-b9b4-5db072b3be76")
+		(property "Reference" "C7"
+			(at 209.55 22.3139 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100uF"
+			(at 209.55 24.8539 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm"
+			(at 207.01 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://fr.rs-online.com/web/p/condensateurs-electrolytiques-aluminium/7060582"
+			(at 207.01 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 207.01 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bc603dc0-6c08-4403-b59b-5d070ec4c82f")
+		)
+		(pin "2"
+			(uuid "0faa3c15-7b09-462a-9eeb-b0f90b5a0497")
+		)
+		(instances
+			(project "MainBoard-PAMI-2025"
+				(path "/d3e1aeb6-1412-4438-ac7d-372534bf2609"
+					(reference "C7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+9V")
 		(at 276.86 31.75 0)
 		(unit 1)
@@ -14202,6 +14889,74 @@
 			(project "MainBoard-PAMI-2025"
 				(path "/d3e1aeb6-1412-4438-ac7d-372534bf2609"
 					(reference "C9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Jumper:SolderJumper_2_Open")
+		(at 38.1 92.71 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "abe7f98a-da7d-4fd6-a141-80ad1955cf26")
+		(property "Reference" "JP1"
+			(at 38.1 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SolderJumper_2_Open"
+			(at 38.1 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
+			(at 38.1 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 38.1 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Solder Jumper, 2-pole, open"
+			(at 38.1 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "8678c373-3580-472d-b75c-36101454077f")
+		)
+		(pin "1"
+			(uuid "b82c0e31-cafa-49d8-8f93-25521abeead7")
+		)
+		(instances
+			(project "MainBoard-PAMI-2025"
+				(path "/d3e1aeb6-1412-4438-ac7d-372534bf2609"
+					(reference "JP1")
 					(unit 1)
 				)
 			)
@@ -16051,6 +16806,77 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:Buzzer")
+		(at 25.4 90.17 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e6268e91-c48c-481c-905f-ccd001c7c0b6")
+		(property "Reference" "BZ2"
+			(at 21.59 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Buzzer"
+			(at 21.59 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Buzzer_Beeper:Buzzer_12x9.5RM7.6"
+			(at 26.035 87.63 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 26.035 87.63 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 25.4 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "33d53888-7e9e-4bb7-a3ef-639b4c7f37a1")
+		)
+		(pin "2"
+			(uuid "7946e608-af75-4132-8be1-db0c3ad786ea")
+		)
+		(instances
+			(project "MainBoard-PAMI-2025"
+				(path "/d3e1aeb6-1412-4438-ac7d-372534bf2609"
+					(reference "BZ2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector_Generic:Conn_01x06")
 		(at 36.83 185.42 0)
 		(unit 1)
@@ -16196,6 +17022,73 @@
 			(project "MainBoard-PAMI-2025"
 				(path "/d3e1aeb6-1412-4438-ac7d-372534bf2609"
 					(reference "C11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 27.94 92.71 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ecec0e93-c109-4f89-bac6-e4956903a8a1")
+		(property "Reference" "#PWR062"
+			(at 27.94 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 27.94 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 27.94 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 27.94 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 27.94 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "370ebcc7-b6d6-4771-ae3d-dbe075f11262")
+		)
+		(instances
+			(project "MainBoard-PAMI-2025"
+				(path "/d3e1aeb6-1412-4438-ac7d-372534bf2609"
+					(reference "#PWR062")
 					(unit 1)
 				)
 			)
