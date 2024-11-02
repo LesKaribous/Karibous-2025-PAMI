@@ -429,7 +429,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "kibuzzard-670C057C"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -746,7 +746,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "kibuzzard-670C04A5"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -1254,7 +1254,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "kibuzzard-670C04A5"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -1373,7 +1373,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "kibuzzard-670C04A5"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -2753,7 +2753,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "kibuzzard-670C047F"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -3380,7 +3380,7 @@
 			)
 		)
 		(property "Value" "22uF"
-			(at 0 -3.75 360)
+			(at 0 -3.75 0)
 			(layer "F.SilkS")
 			(uuid "e4d78530-2ff8-43e4-949b-d1f51fed4c54")
 			(effects
@@ -3766,7 +3766,7 @@
 			(uuid "17118324-72de-4566-bc27-fc59c1bdaa2e")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "89ee7df5-a038-4ada-be4d-7f6ed127cf70")
 			(effects
@@ -5164,7 +5164,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "kibuzzard-670C0436"
 			(at 0 0 -90)
 			(layer "F.Fab")
 			(hide yes)
@@ -8593,7 +8593,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "kibuzzard-670C04A5"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -9726,7 +9726,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "kibuzzard-670C0614"
 			(at 0 0 -90)
 			(layer "F.Fab")
 			(hide yes)
@@ -11397,7 +11397,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "kibuzzard-670C04EF"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -12294,7 +12294,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "kibuzzard-670C07A3"
 			(at 0 0 -90)
 			(layer "F.Fab")
 			(hide yes)
@@ -16665,7 +16665,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "kibuzzard-670C0798"
 			(at 0 0 -90)
 			(layer "F.Fab")
 			(hide yes)
@@ -16777,7 +16777,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "kibuzzard-670C0624"
 			(at 0 0 -90)
 			(layer "F.Fab")
 			(hide yes)
@@ -17739,7 +17739,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "kibuzzard-670C07E1"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -18554,7 +18554,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "kibuzzard-670C060B"
 			(at 0 0 -90)
 			(layer "F.Fab")
 			(hide yes)
@@ -18886,7 +18886,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "kibuzzard-670C077D"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -19039,7 +19039,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "kibuzzard-670C058F"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -19395,7 +19395,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "kibuzzard-670C0418"
 			(at 0 0 -90)
 			(layer "F.Fab")
 			(hide yes)
@@ -21542,7 +21542,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LOGO"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -23309,7 +23309,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "kibuzzard-670C0507"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -23658,7 +23658,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "kibuzzard-670C045B"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -23908,7 +23908,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "kibuzzard-670C05E9"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -24025,7 +24025,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "kibuzzard-670C23C9"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -24573,7 +24573,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "kibuzzard-670C061D"
 			(at 0 0 -90)
 			(layer "F.Fab")
 			(hide yes)
@@ -26205,6 +26205,7 @@
 			(uuid "326a6a38-3c09-4429-86a0-e2a3b8e42458")
 		)
 		(model "${KIPRJMOD}/packages3D/PinHeader_1x03_P2.54mm_Vertical.wrl"
+			(hide yes)
 			(offset
 				(xyz 0 0 0)
 			)
@@ -26213,6 +26214,17 @@
 			)
 			(rotate
 				(xyz 0 0 0)
+			)
+		)
+		(model "${KICAD8_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x03_P2.54mm_Horizontal.step"
+			(offset
+				(xyz 0 -5.08 1)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 180)
 			)
 		)
 	)
@@ -26490,8 +26502,20 @@
 			(uuid "3d94d113-76d0-426e-bd94-dcb89456a470")
 		)
 		(model "${KIPRJMOD}/packages3D/PinHeader_1x03_P2.54mm_Vertical.wrl"
+			(hide yes)
 			(offset
 				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+		(model "${KICAD8_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x03_P2.54mm_Horizontal.step"
+			(offset
+				(xyz 0 0 1)
 			)
 			(scale
 				(xyz 1 1 1)
