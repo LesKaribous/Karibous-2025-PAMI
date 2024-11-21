@@ -14,10 +14,10 @@ void initSensor()
     // Disable/reset all sensors by driving their XSHUT pins low.
     pinMode(xshutPins[0], OUTPUT);
     pinMode(xshutPins[1], OUTPUT);
-    pinMode(xshutPins[3], OUTPUT);
+    pinMode(xshutPins[2], OUTPUT);
     digitalWrite(xshutPins[0], LOW);
     digitalWrite(xshutPins[1], LOW);
-    digitalWrite(xshutPins[3], LOW);
+    digitalWrite(xshutPins[2], LOW);
 
     for (uint8_t i = 0; i < 3; i++)
     {
@@ -59,19 +59,19 @@ bool readSensors(bool setDebug)
     {
         previousTime = millis();
         sensor1 = sensors[0].readRangeContinuousMillimeters();
-        sensor2 = sensors[1].readRangeContinuousMillimeters();
+        //sensor2 = sensors[1].readRangeContinuousMillimeters();
         sensor3 = sensors[2].readRangeContinuousMillimeters();
         // uint16_t sensor1 = sensors[0].readRangeSingleMillimeters();
         // uint16_t sensor2 = sensors[1].readRangeSingleMillimeters();
 
         if (sensors[0].timeoutOccurred()) state = false;
-        if (sensors[1].timeoutOccurred()) state = false;
+        //if (sensors[1].timeoutOccurred()) state = false;
         if (sensors[2].timeoutOccurred()) state = false;
         if (setDebug)
         {
             if (state == true)
             {
-                String str = String(sensor1) + "   " + String(sensor2);
+                String str = String(sensor1) + "   " + String(sensor3);
                 debug(str);
             }
             else debug(" TIMEOUT");
