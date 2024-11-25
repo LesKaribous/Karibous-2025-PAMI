@@ -126,7 +126,7 @@ void match(){
 
 void strategiePAMI(){
 
-  setOpponentChecking(true);
+  setOpponentChecking(false);
   if(getRobotNumber() == 1){
     if(getTeamColor() == TEAM_BLUE){
       goTo(750,180);
@@ -171,6 +171,14 @@ void strategiePAMI(){
       setOpponentChecking(false);
       goTo(3000-0,550);
       armsDown();
+    }
+  }
+  else if(getRobotNumber() == 0){
+    if(getTeamColor() == TEAM_BLUE){
+      go(500);
+    }
+    else{
+      go(500);
     }
   }
 }
