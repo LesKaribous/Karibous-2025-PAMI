@@ -12,7 +12,7 @@
 
 #define STEPS_PER_REVOLUTION 200    // Nombre de pas par tour du moteur
 #define WHEEL_DIAMETER_MM 60.0f     // Diamètre de la roue en millimètres
-#define WHEEL_DISTANCE_MM 85.0f     // Distance entre les roues en millimètres
+#define WHEEL_DISTANCE_MM 75.0f     // Distance entre les roues en millimètres
 
 #define MAX_SPEED       10000.0
 #define MAX_ACCELERATION    2000.0
