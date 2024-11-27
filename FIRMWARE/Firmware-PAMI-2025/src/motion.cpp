@@ -197,7 +197,7 @@ void convertToPolar(Pose _target){
 
 void convertToPolar(float _x, float _y){
   float dx = _x - currentPose.x;
-  float dy = -(_y - currentPose.y);
+  float dy = _y - currentPose.y;
 
   float targetAngleRadians = atan2(dy, dx);
   float currentRotRadians = currentPose.rot * (M_PI / 180.0f);
@@ -218,7 +218,7 @@ void convertToPolar(float _x, float _y){
 
 void convertToPolar(float _x, float _y, float _rot){
   float dx = _x - currentPose.x;
-  float dy = -(_y - currentPose.y);
+  float dy = _y - currentPose.y;
 
   float targetAngleRadians = atan2(dy, dx);
   float currentRotRadians = currentPose.rot * (M_PI / 180.0f);

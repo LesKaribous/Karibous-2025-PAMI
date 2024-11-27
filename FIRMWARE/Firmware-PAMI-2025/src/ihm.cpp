@@ -101,6 +101,19 @@ void playStartupMelody() {
   playMelody(melody, noteDurations, length, tempo);
 }
 
+void playTirette(){
+  int tempo = 400;
+  int melody[] = {
+    NOTE_G4, NOTE_REST
+  };
+
+  // Durées des notes : 2 = blanche, 4 = noire, 8 = croche
+  int noteDurations[] = {
+    4, 8 // Dernière note prolongée
+  };
+  int length = sizeof(melody) / sizeof(melody[0]);
+  playMelody(melody, noteDurations, length, tempo);
+}
 
 void pairingScreen(){
   u8g2.clearBuffer();

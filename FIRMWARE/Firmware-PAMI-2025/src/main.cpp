@@ -42,12 +42,14 @@ void waitStart(){
     delay(500); 
     checkColorTeam();
   }
+  playTirette();
   // Attendre que la tirette soit insérée
   infoLCD("Insert Tirette");
   while(!getTirette()) {
     delay(500);
     checkColorTeam();
   }
+  playTirette();
   // Datum position du PAMI
   delay(2000);
   datumPosition(getRobotNumber(), getTeamColor());
@@ -57,9 +59,11 @@ void waitStart(){
   // Attendre que la tirette soit bien insérée pour éviter les faux-départs
   infoLCD("Insert Tirette");
   while(!getTirette()) delay(500);
+  playTirette();
   // Attendre que la tirette soit retirée pour débuter le match
   infoLCD("Wait Start");
   while(getTirette()) delay(250);
+  playTirette();
   // Le match commence
   setRobotState(MATCH_STARTED);
   infoLCD("Go Match !");
@@ -68,40 +72,50 @@ void waitStart(){
 }
 
 void datumPosition(int robotNumber, int teamColor){
-
-  // Datum at low Speed
-  setMaxSpeed(DATUM_SPEED);
-  setAcceleration(DATUM_ACCELERATION);
-  // Datum Y
-  go(-100);
-  // Save Y position and orientation
-  setCurrentY(CENTER_POSITION_MM);
-  setCurrentRot(270);
-
   if (teamColor == TEAM_BLUE){
-    
-    // Orientate robot
-    goTo(0,80,0);
+    // Datum at low Speed
+    setMaxSpeed(DATUM_SPEED);
+    setAcceleration(DATUM_ACCELERATION);
+    // Datum X
     go(-100);
-    // SaveX position and orientation
-    setCurrentX(1050+CENTER_POSITION_MM);
+    // Save X position and orientation
+    setCurrentX(3000-CENTER_POSITION_MM);
     setCurrentRot(0);
-
-    if(robotNumber == 1) goTo(1120,80,270); // Go to safe position
-    else if(robotNumber == 2) goTo(1120+130,80,270); // Go to safe position
-    else if(robotNumber == 3) goTo(1120+260,80,270); // Go to safe position
-    else debug("ERROR robot number");
-  }
-  else if (teamColor == TEAM_YELLOW){
+    // Orientate robot
     goTo(0,80,180);
     go(-100);
     // SaveX position and orientation
-    setCurrentX(1950-CENTER_POSITION_MM);
+    setCurrentX(1050+CENTER_POSITION_MM);
     setCurrentRot(180);
 
-    if(robotNumber == 1) goTo(1880,80,270); // Go to safe position
-    else if(robotNumber == 2) goTo(1880-130,80,270); // Go to safe position
-    else if(robotNumber == 3) goTo(1880-260,80,270); // Go to safe position
+    if(robotNumber == 0) goTo(60,80,0);        // Go to safe position
+    else if(robotNumber == 1) goTo(180,80,0);  // Go to safe position
+    else if(robotNumber == 2) goTo(300,80,0);  // Go to safe position
+    else if(robotNumber == 3) goTo(420,80,0);  // Go to safe position
+    else debug("ERROR robot number");
+  }
+  else if (teamColor == TEAM_YELLOW){
+    // Datum at low Speed
+    setMaxSpeed(DATUM_SPEED);
+    setAcceleration(DATUM_ACCELERATION);
+
+    // Datum X
+    go(-100);
+    // Save X position and orientation
+    setCurrentX(CENTER_POSITION_MM);
+    setCurrentRot(0);
+    // Orientate robot
+    goTo(100,0,90);
+
+    go(-100);
+    // SaveY position
+    setCurrentY(CENTER_POSITION_MM);
+    setCurrentRot(90);
+
+    if(robotNumber == 0) goTo(100,100,0);        // Go to safe position
+    else if(robotNumber == 1) goTo(100,180,0);  // Go to safe position
+    else if(robotNumber == 2) goTo(100,300,0);  // Go to safe position
+    else if(robotNumber == 3) goTo(100,420,0);  // Go to safe position
     else debug("ERROR robot number");
   }
 
@@ -179,7 +193,16 @@ void strategiePAMI(){
       go(500);
     }
     else{
-      go(500);
+
+      goTo(500,100);
+      setMaxSpeed(MAX_SPEED*0.75f);
+      setAcceleration(MAX_ACCELERATION*0.75f);
+      goTo(1300,100,90);
+      setMaxSpeed(MAX_SPEED);
+      setAcceleration(MAX_ACCELERATION);
+      go(-100);
+      setCurrentY(CENTER_POSITION_MM);
+      goTo(1300,400);
     }
   }
 }

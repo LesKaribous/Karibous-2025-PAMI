@@ -23,7 +23,7 @@
 #define STOP_SPEED      20000.0
 #define STOP_ACCELERATION   4000.0
 
-#define CENTER_POSITION_MM 50       // Valeur entre l'arriere du robot et le centre des roues en millimètres
+#define CENTER_POSITION_MM 53       // Valeur entre l'arriere du robot et le centre des roues en millimètres
 
 #define MOTION_WAIT 0
 #define MOTION_RUN 1

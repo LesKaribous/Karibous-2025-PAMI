@@ -36,6 +36,7 @@ void drawBackLcd();
 void playTone(int frequency, int duration);
 void playMelody(int *notes, int *durations, int length, int tempo);
 void playStartupMelody();
+void playTirette();
 
 bool initEspNow();
 void printMacAdress();
