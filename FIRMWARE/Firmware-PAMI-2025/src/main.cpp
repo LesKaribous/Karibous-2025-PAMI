@@ -130,13 +130,13 @@ void strategiePAMI(){
   if(getRobotNumber() == 1){
     if(getTeamColor() == TEAM_BLUE){
       goTo(750,180);
-      setOpponentChecking(false);
+      setOpponentChecking(true);
       goTo(750,0);
       armsDown();
     }
     else{
       goTo(3000-750,180);
-      setOpponentChecking(false);
+      setOpponentChecking(true);
       goTo(3000-750,0);
       armsDown();
     }
@@ -145,14 +145,14 @@ void strategiePAMI(){
     if(getTeamColor() == TEAM_BLUE){
       goTo(1200,300);
       goTo(600,300);
-      setOpponentChecking(false);
+      setOpponentChecking(true);
       goTo(400,300);
       armsDown();
     }
     else{
       goTo(3000-1200,300);
       goTo(3000-600,300);
-      setOpponentChecking(false);
+      setOpponentChecking(true);
       goTo(3000-400,300);
       armsDown();
     }
@@ -161,19 +161,20 @@ void strategiePAMI(){
     if(getTeamColor() == TEAM_BLUE){
       goTo(1350,450);
       goTo(400,550);
-      setOpponentChecking(false);
+      setOpponentChecking(true);
       goTo(0,550);
       armsDown();
     }
     else{
       goTo(3000-1350,450);
       goTo(3000-400,550);
-      setOpponentChecking(false);
+      setOpponentChecking(true);
       goTo(3000-0,550);
       armsDown();
     }
   }
   else if(getRobotNumber() == 0){
+    setOpponentChecking(true);
     if(getTeamColor() == TEAM_BLUE){
       go(500);
     }
