@@ -27,15 +27,15 @@ void initActuators(){
 }
 
 void armsUp(){
-  servoArmLeft.write(ARM_UP);
-  servoArmRight.write(ARM_UP);
-  //debug("Arm 120 (up)");
+  servoArmLeft.write(ARM_UP_LEFT);
+  servoArmRight.write(ARM_UP_RIGHT);
+  debug("Arms up");
 }
 
 void armsDown(){
-  servoArmLeft.write(ARM_DOWN);
-  servoArmRight.write(ARM_DOWN);
-  //debug("Arm 45 (down)");
+  servoArmLeft.write(ARM_DOWN_LEFT);
+  servoArmRight.write(ARM_DOWN_RIGHT);
+  debug("Arms down");
 }
 
 void testArms(){
@@ -43,4 +43,11 @@ void testArms(){
   delay(1000);
   armsUp();
   delay(1000);
+}
+
+void armsFista(){
+  armsDown();
+  delay(800);
+  armsUp();
+  delay(800);
 }

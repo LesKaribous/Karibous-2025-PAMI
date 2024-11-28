@@ -5,8 +5,8 @@
 #include <Arduino.h>
 #include "ihm.h"
 
-#define TIME_START_MATCH 4000
-#define TIME_END_MATCH 14000
+#define TIME_START_MATCH 1000
+#define TIME_END_MATCH 15000
 
 #define MATCH_WAIT 0
 #define MATCH_BEGIN 1

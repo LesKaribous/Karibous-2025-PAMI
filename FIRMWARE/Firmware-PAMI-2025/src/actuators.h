@@ -8,13 +8,16 @@
 #include "pins.h" 
 #include "ihm.h"
 
-#define ARM_UP 120
-#define ARM_DOWN 45
+#define ARM_UP_LEFT 120
+#define ARM_DOWN_LEFT 45
+#define ARM_UP_RIGHT 45
+#define ARM_DOWN_RIGHT 120
 
 // Déclaration des fonctions
 void initActuators();
 void armsDown();
 void armsUp();
 void testArms();
+void armsFista();
 
 #endif // ACTUATORS_H

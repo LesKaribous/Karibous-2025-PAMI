@@ -23,7 +23,7 @@ void setup() {
   //pairingScreen();
   drawBackLcd();
 
-  enableMotors();
+  disableMotors();
   armsUp();
 
   waitStart();
@@ -36,10 +36,10 @@ void loop()
 }
 
 void waitStart(){
-  // Attendre que la tirette n'est soit plus présente
+  // Attendre que la tirette ne soit plus présente
   infoLCD("Remove Tirette");
   while(getTirette()) {
-    delay(500); 
+    delay(250); 
     checkColorTeam();
   }
   playTirette();
@@ -51,7 +51,7 @@ void waitStart(){
   }
   playTirette();
   // Datum position du PAMI
-  delay(2000);
+  delay(1000);
   datumPosition(getRobotNumber(), getTeamColor());
   setRobotState(READY);
   infoLCD("Robot Ready");
@@ -72,6 +72,7 @@ void waitStart(){
 }
 
 void datumPosition(int robotNumber, int teamColor){
+  enableMotors();
   if (teamColor == TEAM_BLUE){
     // Datum at low Speed
     setMaxSpeed(DATUM_SPEED);
@@ -113,9 +114,9 @@ void datumPosition(int robotNumber, int teamColor){
     setCurrentRot(90);
 
     if(robotNumber == 0) goTo(100,100,0);        // Go to safe position
-    else if(robotNumber == 1) goTo(100,180,0);  // Go to safe position
+    else if(robotNumber == 1) goTo(100,200,0);  // Go to safe position
     else if(robotNumber == 2) goTo(100,300,0);  // Go to safe position
-    else if(robotNumber == 3) goTo(100,420,0);  // Go to safe position
+    else if(robotNumber == 3) goTo(100,400,0);  // Go to safe position
     else debug("ERROR robot number");
   }
 
@@ -131,7 +132,7 @@ void match(){
   }
   else if (getMatchState() == PAMI_STOP){
     disableMotors(); // Desactive les moteurs
-    while(1); // Fin de match
+    while(1) armsFista(); // Fin de match
   }
   else {
     disableMotors(); // Desactive les moteurs
@@ -193,8 +194,9 @@ void strategiePAMI(){
       go(500);
     }
     else{
-
+      setOpponentChecking(true);
       goTo(500,100);
+      setOpponentChecking(false);
       setMaxSpeed(MAX_SPEED*0.75f);
       setAcceleration(MAX_ACCELERATION*0.75f);
       goTo(1300,100,90);
