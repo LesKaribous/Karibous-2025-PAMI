@@ -25,7 +25,6 @@ void setup() {
 
   disableMotors();
   armsDown();
-  while(1) armsFiesta();
 
   waitStart();
 }
