@@ -24,7 +24,8 @@ void setup() {
   drawBackLcd();
 
   disableMotors();
-  armsUp();
+  armsDown();
+  while(1) armsFiesta();
 
   waitStart();
 }
@@ -132,7 +133,7 @@ void match(){
   }
   else if (getMatchState() == PAMI_STOP){
     disableMotors(); // Desactive les moteurs
-    while(1) armsFista(); // Fin de match
+    while(1) armsFiesta(); // Fin de match
   }
   else {
     disableMotors(); // Desactive les moteurs

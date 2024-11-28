@@ -26,15 +26,31 @@ void initActuators(){
     );
 }
 
-void armsUp(){
+void leftUp(){
   servoArmLeft.write(ARM_UP_LEFT);
+}
+
+void rightUp(){
   servoArmRight.write(ARM_UP_RIGHT);
+}
+
+void leftDown(){
+  servoArmLeft.write(ARM_DOWN_LEFT);
+}
+
+void rightDown(){
+  servoArmRight.write(ARM_DOWN_RIGHT);
+}
+
+void armsUp(){
+  leftUp();
+  rightUp();
   debug("Arms up");
 }
 
 void armsDown(){
-  servoArmLeft.write(ARM_DOWN_LEFT);
-  servoArmRight.write(ARM_DOWN_RIGHT);
+  leftDown();
+  rightDown();
   debug("Arms down");
 }
 
@@ -45,9 +61,14 @@ void testArms(){
   delay(1000);
 }
 
-void armsFista(){
-  armsDown();
-  delay(800);
-  armsUp();
-  delay(800);
+void armsFiesta(){
+  randomSeed(analogRead(0));
+  int randomNumber;
+  randomNumber = random(0, 3);
+  if(randomNumber>1) rightDown();
+  else rightUp();
+  randomNumber = random(0, 3);
+  if(randomNumber>1) leftDown();
+  else leftUp();
+  delay(500);
 }

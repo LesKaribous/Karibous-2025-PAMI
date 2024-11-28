@@ -326,7 +326,7 @@ bool checkColorTeam(){
   {
     team = temp;
     teamSelected = true;
-    led.setBrightness(50);
+    led.setBrightness(100);
     if(team == TEAM_BLUE) {
       led.setPixelColor(0,led.Color(0,0,255)); // LED en BLEU
       debug("Team Blue");
@@ -342,7 +342,7 @@ bool checkColorTeam(){
 
 void initLedStatus(){
   led.begin();
-  led.setBrightness(50);
+  led.setBrightness(100);
   led.setPixelColor(0,led.Color(255,255,255));
   led.show();
 }

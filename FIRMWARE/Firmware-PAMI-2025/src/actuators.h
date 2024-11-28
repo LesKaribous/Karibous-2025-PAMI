@@ -15,9 +15,13 @@
 
 // Déclaration des fonctions
 void initActuators();
+void leftUp();
+void rightUp();
+void leftDown();
+void rightDown();
 void armsDown();
 void armsUp();
 void testArms();
-void armsFista();
+void armsFiesta();
 
 #endif // ACTUATORS_H
