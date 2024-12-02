@@ -516,7 +516,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "MainBoard-PAMI-2025.step",
       "svg": "",
       "vrml": "MainBoard-PAMI-2025.wrl"
     },
