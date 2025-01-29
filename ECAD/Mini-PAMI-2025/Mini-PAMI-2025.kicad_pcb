@@ -125,7 +125,7 @@
 		(descr "SOIC, 18 Pin (JEDEC MS-013AB, https://www.analog.com/media/en/package-pcb-resources/package/33254132129439rw_18.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py")
 		(tags "SOIC SO")
 		(property "Reference" "U5"
-			(at 0 -6.72 360)
+			(at 0 -6.72 0)
 			(layer "F.SilkS")
 			(uuid "ff454204-9ea1-4efb-9cc5-d2095d977408")
 			(effects
@@ -136,7 +136,7 @@
 			)
 		)
 		(property "Value" "ULN2803A"
-			(at 0 6.72 360)
+			(at 0 6.72 0)
 			(layer "F.Fab")
 			(uuid "ce144008-623e-402b-8acd-314203ad9390")
 			(effects
@@ -147,7 +147,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-18W_7.5x11.6mm_P1.27mm"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "fc7b0db3-bcf2-40ed-8d1d-ee5449f0ee45")
@@ -159,7 +159,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/uln2803a.pdf"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "82c35c5c-5c54-41d1-9c83-067da1377865")
@@ -171,7 +171,7 @@
 			)
 		)
 		(property "Description" "Darlington Transistor Arrays, SOIC18/DIP18"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "91356c07-d3d6-4145-9856-7ccfeddea2af")
@@ -370,7 +370,7 @@
 			(uuid "58227b32-fc23-4768-b41b-a7f30a8da693")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "ae6b3d2e-9e66-4c1b-98d0-23f782cb160f")
 			(effects
@@ -788,11 +788,11 @@
 	(footprint "Package_SO:SOIC-18W_7.5x11.6mm_P1.27mm"
 		(layer "F.Cu")
 		(uuid "5bf8bd32-65e1-4125-9f1f-450ef2bde553")
-		(at 82 99 180)
+		(at 81.28 97.536 180)
 		(descr "SOIC, 18 Pin (JEDEC MS-013AB, https://www.analog.com/media/en/package-pcb-resources/package/33254132129439rw_18.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py")
 		(tags "SOIC SO")
 		(property "Reference" "U2"
-			(at 0 -6.72 360)
+			(at 0 -6.72 0)
 			(layer "F.SilkS")
 			(uuid "3c63f557-1689-40cf-9e27-bc02dbb30784")
 			(effects
@@ -803,7 +803,7 @@
 			)
 		)
 		(property "Value" "MCP23008-xSO"
-			(at 0 6.72 360)
+			(at 0 6.72 0)
 			(layer "F.Fab")
 			(uuid "bdba2214-80e0-4d7d-aba0-d7166f4fd0c9")
 			(effects
@@ -814,7 +814,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-18W_7.5x11.6mm_P1.27mm"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "2ee63120-1827-4e84-950c-4ab5a3526b13")
@@ -826,7 +826,7 @@
 			)
 		)
 		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/MCP23008-MCP23S08-Data-Sheet-20001919F.pdf"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "6e76dfb2-558c-47b2-ae59-59a2a64b6cda")
@@ -838,7 +838,7 @@
 			)
 		)
 		(property "Description" "8-bit I/O expander, I2C, interrupts, SOIC-18"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "2ad52bcb-5874-417d-8cae-e67e62327467")
@@ -1037,7 +1037,7 @@
 			(uuid "3a1abf7e-e954-496c-9045-498cc4f46f60")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "23e63aba-b210-4c52-94e9-095eff1012bb")
 			(effects
@@ -2039,7 +2039,7 @@
 	(footprint "xiao ESP32C3_PCB:MOUDLE14P-SMD-2.54-21X17.8MM"
 		(layer "F.Cu")
 		(uuid "b38dd1c5-187c-41ed-8391-b247202afc4c")
-		(at 66.0825 87.11925)
+		(at 66.2665 87.06525)
 		(property "Reference" "U3"
 			(at 9.3345 -21.7805 0)
 			(layer "F.SilkS")
@@ -2379,7 +2379,7 @@
 			)
 			(polygon
 				(pts
-					(xy 69.067 74.35575) (xy 71.988 74.35575) (xy 71.988 76.38775) (xy 69.067 76.38775)
+					(xy 69.251 74.30175) (xy 72.172 74.30175) (xy 72.172 76.33375) (xy 69.251 76.33375)
 				)
 			)
 		)
@@ -2407,7 +2407,7 @@
 			)
 			(polygon
 				(pts
-					(xy 69.7655 66.03725) (xy 71.5435 66.03725) (xy 71.5435 68.70425) (xy 69.7655 68.70425)
+					(xy 69.9495 65.98325) (xy 71.7275 65.98325) (xy 71.7275 68.65025) (xy 69.9495 68.65025)
 				)
 			)
 		)
@@ -2435,7 +2435,7 @@
 			)
 			(polygon
 				(pts
-					(xy 69.7655 70.10125) (xy 71.5435 70.10125) (xy 71.5435 72.76825) (xy 69.7655 72.76825)
+					(xy 69.9495 70.04725) (xy 71.7275 70.04725) (xy 71.7275 72.71425) (xy 69.9495 72.71425)
 				)
 			)
 		)
@@ -2463,7 +2463,7 @@
 			)
 			(polygon
 				(pts
-					(xy 72.4325 66.79925) (xy 77.6395 66.79925) (xy 77.6395 73.78425) (xy 72.4325 73.78425)
+					(xy 72.6165 66.74525) (xy 77.8235 66.74525) (xy 77.8235 73.73025) (xy 72.6165 73.73025)
 				)
 			)
 		)
@@ -2491,7 +2491,7 @@
 			)
 			(polygon
 				(pts
-					(xy 72.4325 83.94425) (xy 78.1475 83.94425) (xy 78.1475 86.48425) (xy 72.4325 86.48425)
+					(xy 72.6165 83.89025) (xy 78.3315 83.89025) (xy 78.3315 86.43025) (xy 72.6165 86.43025)
 				)
 			)
 		)
@@ -2519,7 +2519,7 @@
 			)
 			(polygon
 				(pts
-					(xy 75.8615 75.81625) (xy 78.9095 75.81625) (xy 78.9095 78.86425) (xy 75.8615 78.86425)
+					(xy 76.0455 75.76225) (xy 79.0935 75.76225) (xy 79.0935 78.81025) (xy 76.0455 78.81025)
 				)
 			)
 		)
@@ -2547,7 +2547,7 @@
 			)
 			(polygon
 				(pts
-					(xy 78.4015 66.03725) (xy 80.1795 66.03725) (xy 80.1795 68.70425) (xy 78.4015 68.70425)
+					(xy 78.5855 65.98325) (xy 80.3635 65.98325) (xy 80.3635 68.65025) (xy 78.5855 68.65025)
 				)
 			)
 		)
@@ -2575,7 +2575,7 @@
 			)
 			(polygon
 				(pts
-					(xy 78.4015 70.10125) (xy 80.1795 70.10125) (xy 80.1795 72.76825) (xy 78.4015 72.76825)
+					(xy 78.5855 70.04725) (xy 80.3635 70.04725) (xy 80.3635 72.71425) (xy 78.5855 72.71425)
 				)
 			)
 		)
@@ -3822,7 +3822,7 @@
 	(footprint "Connector_JST:JST_XH_B5B-XH-A_1x05_P2.50mm_Vertical"
 		(layer "B.Cu")
 		(uuid "8c787d2b-a768-4a6f-9555-88b67a5c7bc3")
-		(at 54 90 -90)
+		(at 54 87.122 -90)
 		(descr "JST XH series connector, B5B-XH-A (http://www.jst-mfg.com/product/pdf/eng/eXH.pdf), generated with kicad-footprint-generator")
 		(tags "connector JST XH vertical")
 		(property "Reference" "J2"
@@ -4319,7 +4319,7 @@
 	(footprint "Connector_JST:JST_XH_B5B-XH-A_1x05_P2.50mm_Vertical"
 		(layer "B.Cu")
 		(uuid "96a4eb62-6011-49b7-bb88-cb7d4caf07eb")
-		(at 54 73 -90)
+		(at 54 70.946 -90)
 		(descr "JST XH series connector, B5B-XH-A (http://www.jst-mfg.com/product/pdf/eng/eXH.pdf), generated with kicad-footprint-generator")
 		(tags "connector JST XH vertical")
 		(property "Reference" "J1"
@@ -5403,5 +5403,71 @@
 		)
 		(layer "Edge.Cuts")
 		(uuid "de790dfe-6b16-4330-b6ab-6f9712dfd998")
+	)
+	(dimension
+		(type aligned)
+		(layer "F.Fab")
+		(uuid "1a7503b3-a2e3-48b7-b890-b73bd3d24416")
+		(pts
+			(xy 98 66) (xy 98 118)
+		)
+		(height -8.68)
+		(gr_text "52,0000 mm"
+			(at 105.53 92 90)
+			(layer "F.Fab")
+			(uuid "1a7503b3-a2e3-48b7-b890-b73bd3d24416")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(format
+			(prefix "")
+			(suffix "")
+			(units 3)
+			(units_format 1)
+			(precision 4)
+		)
+		(style
+			(thickness 0.1)
+			(arrow_length 1.27)
+			(text_position_mode 0)
+			(extension_height 0.58642)
+			(extension_offset 0.5) keep_text_aligned)
+	)
+	(dimension
+		(type aligned)
+		(layer "F.Fab")
+		(uuid "e6c203c9-9b94-42d3-9852-8efe785c6a73")
+		(pts
+			(xy 102 70) (xy 50 70)
+		)
+		(height 10.309999)
+		(gr_text "52,0000 mm"
+			(at 76 58.540001 0)
+			(layer "F.Fab")
+			(uuid "e6c203c9-9b94-42d3-9852-8efe785c6a73")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(format
+			(prefix "")
+			(suffix "")
+			(units 3)
+			(units_format 1)
+			(precision 4)
+		)
+		(style
+			(thickness 0.1)
+			(arrow_length 1.27)
+			(text_position_mode 0)
+			(extension_height 0.58642)
+			(extension_offset 0.5) keep_text_aligned)
 	)
 )

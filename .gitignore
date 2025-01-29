@@ -30,3 +30,6 @@
 *.exe
 *.out
 *.app
+/ECAD/MainBoard-PAMI-2025/MainBoard-PAMI-2025-backups
+/ECAD/MainBoard-PAMI-2025/MainBoard-PAMI-2025-backups
+/ECAD/Mini-PAMI-2025/Mini-PAMI-2025-backups
