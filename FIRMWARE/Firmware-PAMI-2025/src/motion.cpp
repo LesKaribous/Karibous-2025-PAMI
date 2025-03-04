@@ -142,7 +142,7 @@ void processMove(){
   long tempDistance_G = 0;
 
   debug("Processing Move...");
-  while(motor_D.isRunning() || motor_G.isRunning()){
+  while((motor_D.isRunning() || motor_G.isRunning())&& getMatchState() != PAMI_STOP){
     updateMotors();
     if (opponentChecking){
       if (checkOpponent()){
@@ -162,20 +162,24 @@ void processMove(){
 
         updateMotors();
         while(motor_D.isRunning() || motor_G.isRunning()) updateMotors();
-        while(checkOpponent()){
+        while(checkOpponent()&& getMatchState() != PAMI_STOP){
           updateMatchTime();
           debug ("Opponent still here");
         }
+        if(getMatchState() == PAMI_STOP) debug("Movement resumed");
+        else {
+          debug ("Freeway");
+          setAcceleration(MAX_ACCELERATION);
+          setMaxSpeed(MAX_SPEED);
 
-        setAcceleration(MAX_ACCELERATION);
-        setMaxSpeed(MAX_SPEED);
-
-        motor_D.move(tempDistance_D);
-        motor_G.move(tempDistance_G);
+          motor_D.move(tempDistance_D);
+          motor_G.move(tempDistance_G);
+        }
       }
     }
   }
-  debug("Movement ok");
+  if(getMatchState() == PAMI_STOP) debug("Movement resumed");
+  else debug("Movement ok");
 }
 
 long convertDistToStep(float _dist) {
