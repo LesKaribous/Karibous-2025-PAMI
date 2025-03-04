@@ -11,6 +11,7 @@ void datumPosition(int robotNumber, int teamColor);
 void match();
 void strategiePAMI();
 
+void setup()
 {
 
   initBuzzer();
