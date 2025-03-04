@@ -77,22 +77,41 @@ void datumPosition(int robotNumber, int teamColor){
     // Datum at low Speed
     setMaxSpeed(DATUM_SPEED);
     setAcceleration(DATUM_ACCELERATION);
+
     // Datum X
     go(-100);
     // Save X position and orientation
     setCurrentX(3000-CENTER_POSITION_MM);
-    setCurrentRot(0);
-    // Orientate robot
-    goTo(0,80,180);
-    go(-100);
-    // SaveX position and orientation
-    setCurrentX(1050+CENTER_POSITION_MM);
     setCurrentRot(180);
+    // Orientate robot
+    goTo(3000-250,0,90);
 
-    if(robotNumber == 0) goTo(60,80,0);        // Go to safe position
-    else if(robotNumber == 1) goTo(180,80,0);  // Go to safe position
-    else if(robotNumber == 2) goTo(300,80,0);  // Go to safe position
-    else if(robotNumber == 3) goTo(420,80,0);  // Go to safe position
+    go(-100);
+    // SaveY position
+    setCurrentY(CENTER_POSITION_MM);
+    setCurrentRot(90);
+
+    // Go to safe position
+    if(robotNumber == 0){
+      goTo(3000-250,100,180);
+      go(-150);
+      setCurrentX(2900);    
+    }    
+    else if(robotNumber == 1){
+      goTo(3000-250,200,180);
+      go(-150);
+      setCurrentX(2900);
+    }
+    else if(robotNumber == 2){
+      goTo(3000-250,300,180);
+      go(-150);
+      setCurrentX(2900);
+    }
+    else if(robotNumber == 3){
+      goTo(3000-250,400,180);
+      go(-150);
+      setCurrentX(2900);
+    }
     else debug("ERROR robot number");
   }
   else if (teamColor == TEAM_YELLOW){
@@ -106,18 +125,36 @@ void datumPosition(int robotNumber, int teamColor){
     setCurrentX(CENTER_POSITION_MM);
     setCurrentRot(0);
     // Orientate robot
-    goTo(100,0,90);
+    goTo(250,0,90);
 
     go(-100);
     // SaveY position
     setCurrentY(CENTER_POSITION_MM);
     setCurrentRot(90);
 
-    if(robotNumber == 0) goTo(100,100,0);        // Go to safe position
-    else if(robotNumber == 1) goTo(100,200,0);  // Go to safe position
-    else if(robotNumber == 2) goTo(100,300,0);  // Go to safe position
-    else if(robotNumber == 3) goTo(100,400,0);  // Go to safe position
+    // Go to safe position
+    if(robotNumber == 0){
+      goTo(250,100,0);
+      go(-150);
+      setCurrentX(100);    
+    }    
+    else if(robotNumber == 1){
+      goTo(250,200,0);
+      go(-150);
+      setCurrentX(100);
+    }
+    else if(robotNumber == 2){
+      goTo(250,300,0);
+      go(-150);
+      setCurrentX(100);
+    }
+    else if(robotNumber == 3){
+      goTo(250,400,0);
+      go(-150);
+      setCurrentX(100);
+    }
     else debug("ERROR robot number");
+
   }
 
   setMaxSpeed(MAX_SPEED);

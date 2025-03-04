@@ -159,7 +159,7 @@ void drawSplashScreen(){
   // Mettre à jour l'écran
   u8g2.sendBuffer();
   //delay(2000);
-  playStartupMelody();
+  //playStartupMelody();
   u8g2.clearBuffer();
 }
 
@@ -197,7 +197,7 @@ bool initEspNow(){
   // Si Init OK
   if(initState == true)
   {
-    if(robotNumber == 1) //Si Robot Principal
+    if(robotNumber == 0) //Si Robot Principal
     {
       esp_now_register_send_cb(OnDataSent);
       // register peer
@@ -219,7 +219,7 @@ bool initEspNow(){
       }else{addPeerState = true;}
     } else {esp_now_register_recv_cb(OnDataRecv);}// get recv packer info
   }
-  if(initState && addPeerState && robotNumber == 1)
+  if(initState && addPeerState && robotNumber == 0)
   {
     messageState = BroadcastMessage(PAIRING);
     if (messageState) robotState = PAIRED;
