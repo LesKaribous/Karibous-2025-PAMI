@@ -169,6 +169,7 @@ void match(){
   }
   else if (getMatchState() == PAMI_STOP){
     disableMotors(); // Desactive les moteurs
+    infoLCD("Fin Match !");
     while(1) armsFiesta(); // Fin de match
   }
   else {
