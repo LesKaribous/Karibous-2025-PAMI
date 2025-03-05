@@ -31,3 +31,18 @@ void updateMatchTime(){
     }
   }
 }
+void pause(long millisecondes) {
+    unsigned long startPause = millis(); // Enregistre le temps de début de la pause
+
+    while (millis() - startPause < millisecondes) {
+        updateMatchTime(); // Met à jour l'état du match
+
+        if (getMatchState() == PAMI_STOP) {
+            debug("Pause interrompue : match terminé");
+            break; // Sort de la pause si le match est terminé
+        }
+
+        // Ajout d'un petit délai non bloquant pour éviter de monopoliser le CPU
+        delayMicroseconds(500);  
+    }
+}

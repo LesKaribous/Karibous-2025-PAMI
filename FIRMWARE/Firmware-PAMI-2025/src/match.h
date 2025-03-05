@@ -17,5 +17,6 @@ int getMatchState();
 void setMatchState(int _state);
 void startMatch();
 void updateMatchTime();
+void pause(long millisecondes);
 
 #endif // MATCH_H
