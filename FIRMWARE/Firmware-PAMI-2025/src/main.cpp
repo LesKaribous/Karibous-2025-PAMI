@@ -77,6 +77,8 @@ void waitStart()
   startMatch();
 }
 
+
+
 void datumPosition(int robotNumber, int teamColor)
 {
   enableMotors();
@@ -239,55 +241,49 @@ void strategiePAMI()
   {
     if (getTeamColor() == TEAM_BLUE)
     {
-      goTo(750, 180);
+      pause(4000);
+      goTo(3000-200, 200);
       setOpponentChecking(true);
-      goTo(750, 0);
-      armsDown();
+      goTo(3000-900, 500,-90);
     }
     else
     {
-      goTo(3000 - 750, 180);
+      pause(4000);
+      goTo(200, 200);
       setOpponentChecking(true);
-      goTo(3000 - 750, 0);
-      armsDown();
+      goTo(900, 500,-90);
     }
   }
   else if (getRobotNumber() == 2)
   {
     if (getTeamColor() == TEAM_BLUE)
     {
-      goTo(1200, 300);
-      goTo(600, 300);
+      pause(2000);
+      goTo(3000-200, 300);
       setOpponentChecking(true);
-      goTo(400, 300);
-      armsDown();
+      goTo(3000-1200, 700,-90);
     }
     else
     {
-      goTo(3000 - 1200, 300);
-      goTo(3000 - 600, 300);
+      pause(2000);
+      goTo(200, 300);
       setOpponentChecking(true);
-      goTo(3000 - 400, 300);
-      armsDown();
+      goTo(1200, 700,-90);
     }
   }
   else if (getRobotNumber() == 3)
   {
     if (getTeamColor() == TEAM_BLUE)
     {
-      goTo(1350, 450);
-      goTo(400, 550);
+      goTo(3000-200, 400);
       setOpponentChecking(true);
-      goTo(0, 550);
-      armsDown();
+      goTo(3000-1800, 700,-90);
     }
     else
     {
-      goTo(3000 - 1350, 450);
-      goTo(3000 - 400, 550);
+      goTo(200, 400);
       setOpponentChecking(true);
-      goTo(3000 - 0, 550);
-      armsDown();
+      goTo(1800, 700,-90);
     }
   }
 }
