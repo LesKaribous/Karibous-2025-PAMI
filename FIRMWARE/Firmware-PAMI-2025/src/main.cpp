@@ -210,7 +210,7 @@ void strategiePAMI()
   {
     if (getTeamColor() == TEAM_BLUE)
     {
-      setOpponentChecking(true);
+      setOpponentChecking(false); // !!!!!!!!!!!
       goTo(3000-500, 100);
       setOpponentChecking(false);
       setMaxSpeed(MAX_SPEED * 0.75f);
