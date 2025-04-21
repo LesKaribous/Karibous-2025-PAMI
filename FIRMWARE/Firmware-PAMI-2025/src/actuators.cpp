@@ -62,6 +62,13 @@ void testArms(){
 }
 
 void armsFiesta(){
+  rightUp();
+  leftUp();
+  delay(500);
+  rightDown();
+  leftDown();
+  delay(500);
+/*
   randomSeed(analogRead(0));
   int randomNumber;
   randomNumber = random(0, 3);
@@ -71,4 +78,5 @@ void armsFiesta(){
   if(randomNumber>1) leftDown();
   else leftUp();
   delay(500);
+  */
 }

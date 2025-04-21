@@ -213,28 +213,28 @@ void strategiePAMI()
       setOpponentChecking(false); // !!!!!!!!!!!
       goTo(3000-500, 100);
       setOpponentChecking(false);
-      setMaxSpeed(MAX_SPEED * 0.75f);
-      setAcceleration(MAX_ACCELERATION * 0.75f);
+      setMaxSpeed(MAX_SPEED * 0.40f);
+      setAcceleration(MAX_ACCELERATION * 0.40f);
       goTo(3000-1300, 100, 90);
-      setMaxSpeed(MAX_SPEED);
-      setAcceleration(MAX_ACCELERATION);
-      go(-100);
+      go(-240);
       setCurrentY(CENTER_POSITION_MM);
-      goTo(3000-1300, 400);
+      setMaxSpeed(MAX_SPEED * 0.30f);
+      setAcceleration(MAX_ACCELERATION * 0.30f);
+      goTo(3000-1300, 430);
     }
     else
     {
-      setOpponentChecking(true);
+      setOpponentChecking(false);
       goTo(500, 100);
       setOpponentChecking(false);
-      setMaxSpeed(MAX_SPEED * 0.75f);
-      setAcceleration(MAX_ACCELERATION * 0.75f);
+      setMaxSpeed(MAX_SPEED * 0.40f);
+      setAcceleration(MAX_ACCELERATION * 0.40f);
       goTo(1300, 100, 90);
-      setMaxSpeed(MAX_SPEED);
-      setAcceleration(MAX_ACCELERATION);
-      go(-100);
+      go(-240);
       setCurrentY(CENTER_POSITION_MM);
-      goTo(1300, 400);
+      setMaxSpeed(MAX_SPEED * 0.30f);
+      setAcceleration(MAX_ACCELERATION * 0.30f);
+      goTo(1300, 430);
     }
   }
   else if (getRobotNumber() == 1)
