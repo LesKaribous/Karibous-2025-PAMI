@@ -7,6 +7,7 @@ uint16_t sensor2 = 0;
 uint16_t sensor3 = 0;
 
 long previousTime = 0;
+bool debugSensor = true; // Mettre son robot en mode debug : oui / Mettre son robot en mode "des bugs" : Non - HistoriCode97 - 03/12/2023
 
 void initSensor()
 {
@@ -82,6 +83,15 @@ bool readSensors(bool setDebug)
 
 bool checkOpponent(uint16_t distance)
 {
+    // TODO: Test debug sensor
+    /*
+    if(readSensors(debugSensor))
+    {
+        if (sensor1 <= distance || sensor3 <= distance) return true;
+        else return false;
+    }
+    */
+
     readSensors();
     if (sensor1 <= distance || sensor3 <= distance) return true;
     else return false;
