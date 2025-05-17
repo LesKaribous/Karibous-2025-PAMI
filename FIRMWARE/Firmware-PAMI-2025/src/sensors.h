@@ -9,12 +9,16 @@
 #include "pins.h" 
 #include "ihm.h" 
 
-#define OPPONENT_DISTANCE_MM 200
-#define READ_TIME_PERIOD_MS 40
+// Opponent detection distances
+#define MIN_DISTANCE_MM 300
+#define MAX_DISTANCE_MM 500
+// Sensors limit and parameters
+#define MAX_SENSOR_VALUE 7000 // Strange value at 8190
+#define READ_TIME_PERIOD_MS 100 // Before : 40
 
 // Déclaration des fonctions
 void initSensor();
 bool readSensors(bool setDebug = false);
-bool checkOpponent(uint16_t distance = OPPONENT_DISTANCE_MM);
+bool checkOpponent(uint16_t distance = MIN_DISTANCE_MM);
 
 #endif // SENSORS_H

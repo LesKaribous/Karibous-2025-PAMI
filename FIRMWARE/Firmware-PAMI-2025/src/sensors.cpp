@@ -48,7 +48,8 @@ void initSensor()
         sensors[i].setAddress(0x2A + i);
 
         sensors[i].startContinuous();
-        sensors[i].setMeasurementTimingBudget(2000);
+        //sensors[i].setMeasurementTimingBudget(2000); // Non utilisé 
+        sensors[i].setSignalRateLimit(0.3); // Default 0.25
     }
     previousTime = millis();
 }
@@ -56,18 +57,36 @@ void initSensor()
 bool readSensors(bool setDebug)
 {
     bool state = true;
+
+    uint16_t previousSensor1 = sensor1;
+    uint16_t previousSensor2 = sensor2;
+    uint16_t previousSensor3 = sensor3;
+
     if (millis() - previousTime > READ_TIME_PERIOD_MS)
     {
         previousTime = millis();
         sensor1 = sensors[0].readRangeContinuousMillimeters();
         //sensor2 = sensors[1].readRangeContinuousMillimeters();
         sensor3 = sensors[2].readRangeContinuousMillimeters();
-        // uint16_t sensor1 = sensors[0].readRangeSingleMillimeters();
-        // uint16_t sensor2 = sensors[1].readRangeSingleMillimeters();
 
-        if (sensors[0].timeoutOccurred()) state = false;
-        //if (sensors[1].timeoutOccurred()) state = false;
-        if (sensors[2].timeoutOccurred()) state = false;
+        if (sensors[0].timeoutOccurred()) {
+            state = false;
+            sensor1 = previousSensor1 ;
+        }
+        /*
+        if (sensors[1].timeoutOccurred() || sensor2 > MAX_SENSOR_VALUE) {
+            state = false;
+            sensor2 = previousSensor2 ;
+        }*/
+        if (sensors[2].timeoutOccurred()) {
+            state = false;
+            sensor3 = previousSensor3 ;
+        }
+
+        if (sensor1 > MAX_SENSOR_VALUE) sensor1 = previousSensor1;
+        //if (sensor2 > MAX_SENSOR_VALUE) sensor2 = previousSensor2;
+        if (sensor3 > MAX_SENSOR_VALUE) sensor3 = previousSensor3;
+
         if (setDebug)
         {
             if (state == true)
@@ -75,8 +94,9 @@ bool readSensors(bool setDebug)
                 String str = String(sensor1) + "   " + String(sensor3);
                 debug(str);
             }
-            else debug(" TIMEOUT");
+            else debug("TIMEOUT");
         }
+        
     }
     return state;
 }
@@ -91,8 +111,16 @@ bool checkOpponent(uint16_t distance)
         else return false;
     }
     */
+    if (distance > MAX_DISTANCE_MM) distance = MAX_DISTANCE_MM;
+    else if (distance < MIN_DISTANCE_MM ) distance = MIN_DISTANCE_MM;
 
-    readSensors();
-    if (sensor1 <= distance || sensor3 <= distance) return true;
+    if(readSensors())
+    {
+        if (sensor1 <= distance || sensor3 <= distance) {
+            debug ("Opponent at" + String(distance) + "mm");
+            return true;
+        }
+        else return false;
+    }
     else return false;
 }

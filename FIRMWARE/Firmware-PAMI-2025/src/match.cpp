@@ -29,6 +29,11 @@ void updateMatchTime(){
         setMatchState(PAMI_RUN);
         debug("Match Run");
     }
+    else if(getMatchState() == MATCH_BEGIN)
+    {
+        infoLCD(String((TIME_START_MATCH-elapsedTime)/1000) + " sec");
+        debug("Waiting...");
+    }
   }
 }
 void pause(long millisecondes) {

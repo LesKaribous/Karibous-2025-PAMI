@@ -83,6 +83,7 @@ void setOpponentChecking(bool _opponentChecking);
 void setMotionState(int _motionState);
 
 long convertDistToStep(float _dist);
+long convertStepToDist(long _step);
 long convertAngleToStep(float angle);
 
 // Déplacements relatifs

@@ -100,9 +100,12 @@ void go(float _dist){
 
 void turn(float _angle){
   long stepValue = convertAngleToStep(_angle);
+  bool previousOpponentChecking = opponentChecking ;
   motor_G.move(stepValue);
   motor_D.move(stepValue);
+  setOpponentChecking(false);
   processMove();
+  setOpponentChecking(previousOpponentChecking);
 }
 
 void updateMotors(){
@@ -141,12 +144,15 @@ void processMove(){
   long tempDistance_D = 0;
   long tempDistance_G = 0;
 
+  long distanceToGo = 0;
+
   debug("Processing Move...");
   while((motor_D.isRunning() || motor_G.isRunning())&& getMatchState() != PAMI_STOP){
     updateMotors();
     if (opponentChecking){
-      if (checkOpponent()){
-        debug("Opponent detected");
+      distanceToGo = convertStepToDist(motor_D.distanceToGo()); // TODO : Changer pour utiliser l'acceleration ou la vitesse ? 
+      if (checkOpponent(distanceToGo)){
+        //debug ("Opponent at" + String(distanceToGo) + "mm");
 
         tempDistance_D = motor_D.distanceToGo();
         tempDistance_G = motor_G.distanceToGo();
@@ -162,9 +168,10 @@ void processMove(){
 
         updateMotors();
         while(motor_D.isRunning() || motor_G.isRunning()) updateMotors();
-        while(checkOpponent()&& getMatchState() != PAMI_STOP){
+        while(checkOpponent(distanceToGo)&& getMatchState() != PAMI_STOP){
           updateMatchTime();
-          debug ("Opponent still here");
+          //debug ("Opponent at" + String(distanceToGo) + "mm");
+          //readSensors(true);
         }
         if(getMatchState() == PAMI_STOP) debug("Movement resumed");
         else {
@@ -185,6 +192,11 @@ void processMove(){
 long convertDistToStep(float _dist) {
   float revolutions = _dist / circumferenceMM;
   return static_cast<long>(revolutions * STEPS_PER_REVOLUTION * stepMultiplier);
+}
+
+long convertStepToDist(long _step) {
+  float revolutions = abs(_step) / (STEPS_PER_REVOLUTION * stepMultiplier);
+  return static_cast<long>(revolutions * circumferenceMM);
 }
 
 // Convert angle to step for one wheel (robot turning on center)
