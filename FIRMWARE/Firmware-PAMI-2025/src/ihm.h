@@ -38,6 +38,10 @@ void playMelody(int *notes, int *durations, int length, int tempo);
 void playStartupMelody();
 void playTirette();
 
+void selectMelody(int index);
+void runMelody();
+void pauseWithMelody(unsigned long duration, bool enableMelody);
+
 bool initEspNow();
 void printMacAdress();
 bool BroadcastMessage(int orderMessage);

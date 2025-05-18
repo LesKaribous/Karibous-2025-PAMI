@@ -61,15 +61,20 @@ void testArms(){
   delay(1000);
 }
 
-void armsFiesta(){
+void armsFiesta() {
   // Attendre que elapsedTime soit un multiple de 1000
-  while ((millis() - getStartTime()) % 1000 != 0) delay(1);
+  while ((millis() - getStartTime()) % 1000 != 0) {
+    bool enableMelody = (millis() - getStartTime()) >= TIME_END_MATCH;
+    if (enableMelody) runMelody();
+    delay(1);
+  }
 
   rightUp();
   leftUp();
-  delay(500);
+  pauseWithMelody(500, (millis() - getStartTime()) >= TIME_END_MATCH);
 
   rightDown();
   leftDown();
-  delay(500);
+  pauseWithMelody(500, (millis() - getStartTime()) >= TIME_END_MATCH);
 }
+

@@ -26,6 +26,7 @@ void setup()
 
   disableMotors();
   armsDown();
+  selectMelody(getRobotNumber());
 
   //while(1) readSensors(true); //Test sensors
 

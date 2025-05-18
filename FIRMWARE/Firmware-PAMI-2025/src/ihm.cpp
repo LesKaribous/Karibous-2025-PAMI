@@ -9,6 +9,97 @@ bool modeDebugLCD = true;
 byte robotNumber;
 int robotState = UNDEFINED;
 
+// Variables pour la mélodie
+int currentNote = 0;
+unsigned long noteStartTime = 0;
+bool noteIsPlaying = false;
+unsigned long noteDurationMs = 0;
+int tempo = 120;
+
+struct Note {
+  int frequency;
+  int duration;
+};
+
+struct Melody {
+  Note* notes;
+  int length;
+};
+
+// Chanteur - mélodie
+Note melody0[] = {
+  {NOTE_AS4, 16}, {NOTE_AS4, 16}, {NOTE_GS4, 16}, {NOTE_GS4, 16},
+  {NOTE_F5, 8}, {NOTE_F5, 8}, {NOTE_DS5, 4}, {NOTE_AS4, 16},
+  {NOTE_AS4, 16}, {NOTE_GS4, 16}, {NOTE_GS4, 16}, {NOTE_DS5, 8},
+  {NOTE_DS5, 8}, {NOTE_CS5, 8}, {NOTE_C5, 16}, {NOTE_AS4, 8},
+
+  {NOTE_CS5, 16}, {NOTE_CS5, 16}, {NOTE_CS5, 16}, {NOTE_CS5, 16},
+  {NOTE_CS5, 8}, {NOTE_DS5, 8}, {NOTE_C5, 8}, {NOTE_AS4, 16},
+  {NOTE_GS4, 8}, {NOTE_GS4, 8}, {NOTE_GS4, 8}, {NOTE_DS5, 4}, {NOTE_CS5, 2},
+
+  {NOTE_AS4, 16}, {NOTE_AS4, 16}, {NOTE_GS4, 16}, {NOTE_GS4, 16},
+  {NOTE_F5, 8}, {NOTE_F5, 8}, {NOTE_DS5, 4}, {NOTE_AS4, 16},
+  {NOTE_AS4, 16}, {NOTE_GS4, 16}, {NOTE_GS4, 16}, {NOTE_GS5, 8},
+  {NOTE_C5, 8}, {NOTE_CS5, 8}, {NOTE_C5, 16}, {NOTE_AS4, 8},
+
+  {NOTE_CS5, 16}, {NOTE_CS5, 16}, {NOTE_CS5, 16}, {NOTE_CS5, 16},
+  {NOTE_CS5, 8}, {NOTE_DS5, 8}, {NOTE_C5, 8}, {NOTE_AS4, 16},
+  {NOTE_GS4, 8}, {NOTE_REST, 8}, {NOTE_GS4, 8}, {NOTE_DS5, 4},
+  {NOTE_CS5, 2}, {NOTE_REST, 4}
+};
+
+// Batterie - Beat
+Note melody1[] = {
+  {DRUM_KICK, 16}, {DRUM_KICK, 16}, {DRUM_KICK, 16}, {DRUM_KICK, 16},
+  {NOTE_REST, 8},  {NOTE_REST, 8},  {DRUM_SNARE, 4}, {NOTE_REST, 16},
+  {NOTE_REST, 16}, {NOTE_REST, 16}, {NOTE_REST, 16}, {DRUM_KICK, 8},
+  {DRUM_KICK, 8},  {NOTE_REST, 8},  {NOTE_REST, 16}, {NOTE_REST, 8},
+
+  {DRUM_SNARE, 16}, {DRUM_SNARE, 16}, {DRUM_SNARE, 16}, {NOTE_REST, 16},
+  {NOTE_REST, 8},   {NOTE_REST, 8},   {DRUM_KICK, 8},   {DRUM_KICK, 16},
+  {NOTE_REST, 8},   {NOTE_REST, 8},   {DRUM_SNARE, 8},  {DRUM_SNARE, 4},
+  {NOTE_REST, 2},
+
+  {NOTE_REST, 16},  {NOTE_REST, 16},  {DRUM_SNARE, 16}, {DRUM_SNARE, 16},
+  {DRUM_SNARE, 8},  {NOTE_REST, 8},   {NOTE_REST, 4},   {DRUM_KICK, 16},
+  {DRUM_KICK, 16},  {NOTE_REST, 16},  {NOTE_REST, 16},  {NOTE_REST, 8},
+  {DRUM_SNARE, 8},  {DRUM_SNARE, 8},  {NOTE_REST, 16},  {NOTE_REST, 8},
+
+  {NOTE_REST, 16},  {DRUM_KICK, 16},  {DRUM_KICK, 16},  {DRUM_KICK, 8},
+  {NOTE_REST, 8},   {NOTE_REST, 8},   {DRUM_SNARE, 16}, {DRUM_SNARE, 8},
+  {NOTE_REST, 8},   {NOTE_REST, 8},   {DRUM_KICK, 4},   {NOTE_REST, 2},
+  {NOTE_REST, 4}
+};
+
+
+
+// TODO : Guitare
+Note melody2[] = {
+  {NOTE_A3, 1},
+  {NOTE_GS3, 1},
+  {NOTE_FS3, 1},
+  {NOTE_E3, 1}
+};
+
+// TODO : Guitare 2
+Note melody3[] = {
+  {NOTE_CS5, 2}, {NOTE_B4, 2},
+  {NOTE_A4, 4}, {NOTE_GS4, 4}, {NOTE_E4, 4}, {NOTE_FS4, 4},
+  {NOTE_GS4, 4}, {NOTE_A4, 4}, {NOTE_B4, 4}, {NOTE_CS5, 4},
+  {NOTE_CS5, 2}, {NOTE_B4, 8}, {NOTE_A4, 8}
+};
+
+
+Melody melodies[] = {
+  {melody0, sizeof(melody0) / sizeof(Note)},
+  {melody1, sizeof(melody1) / sizeof(Note)},
+  {melody2, sizeof(melody2) / sizeof(Note)},
+  {melody3, sizeof(melody3) / sizeof(Note)}
+};
+
+int selectedMelody = 0; // de 0 à 3
+Melody currentMelody;
+
 // Variables pour le buzzer
 const int pwmChannel = 2;
 const int resolution = 8;
@@ -59,6 +150,49 @@ void initBuzzer(){
   ledcSetup(pwmChannel, 2000, resolution); // Fréquence initiale de 2000 Hz, résolution de 8 bits
   ledcAttachPin(Buzzer, pwmChannel);    // Associer le buzzer au canal PWM
 }
+
+void selectMelody(int index) {
+  if (index >= 0 && index < 4) {
+    selectedMelody = index;
+    currentMelody = melodies[index];
+    currentNote = 0;
+    noteIsPlaying = false;
+  }
+}
+
+void runMelody() {
+  unsigned long now = millis();
+
+  if (noteIsPlaying) {
+    if (now - noteStartTime >= noteDurationMs) {
+      ledcWriteTone(pwmChannel, 0);
+      noteIsPlaying = false;
+      noteStartTime = now;
+    }
+  }
+  else if (currentNote < currentMelody.length) {
+    Note note = currentMelody.notes[currentNote];
+    int baseDuration = 60000 / tempo;
+    noteDurationMs = baseDuration * 4 / note.duration;
+
+    ledcWriteTone(pwmChannel, note.frequency);
+    noteIsPlaying = true;
+    noteStartTime = now;
+    currentNote++;
+  }
+}
+
+
+void pauseWithMelody(unsigned long duration, bool enableMelody) {
+  unsigned long start = millis();
+  while (millis() - start < duration) {
+    if (enableMelody) {
+      runMelody();
+    }
+    delay(1);
+  }
+}
+
 
 void playTone(int frequency, int duration) {
   if (frequency > 0) {

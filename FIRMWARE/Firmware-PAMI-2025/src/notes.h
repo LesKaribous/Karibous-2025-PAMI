@@ -3,6 +3,8 @@
 
 // Fréquences des notes
 #define NOTE_REST 0 // Silence
+#define DRUM_KICK 110  // Simule la grosse caisse
+#define DRUM_SNARE 220 // Simule la caisse claire
 #define NOTE_B0  31
 #define NOTE_C1  33
 #define NOTE_CS1 35
@@ -93,5 +95,6 @@
 #define NOTE_D8  4699
 #define NOTE_DS8 4978
 #define NOTE_REST 0
+
 
 #endif // NOTES_H
