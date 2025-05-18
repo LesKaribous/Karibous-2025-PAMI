@@ -62,21 +62,14 @@ void testArms(){
 }
 
 void armsFiesta(){
+  // Attendre que elapsedTime soit un multiple de 1000
+  while ((millis() - getStartTime()) % 1000 != 0) delay(1);
+
   rightUp();
   leftUp();
   delay(500);
+
   rightDown();
   leftDown();
   delay(500);
-/*
-  randomSeed(analogRead(0));
-  int randomNumber;
-  randomNumber = random(0, 3);
-  if(randomNumber>1) rightDown();
-  else rightUp();
-  randomNumber = random(0, 3);
-  if(randomNumber>1) leftDown();
-  else leftUp();
-  delay(500);
-  */
 }

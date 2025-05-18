@@ -2,12 +2,18 @@
 #include "sensors.h"
 
 VL53L0X sensors[3];
+uint16_t sensorsValue[3];
+bool sensorsState[3];
 uint16_t sensor1 = 0;
 uint16_t sensor2 = 0;
 uint16_t sensor3 = 0;
 
 long previousTime = 0;
-bool debugSensor = true; // Mettre son robot en mode debug : oui / Mettre son robot en mode "des bugs" : Non - HistoriCode97 - 03/12/2023
+bool debugSensor = false; // Mettre son robot en mode debug : oui / Mettre son robot en mode "des bugs" : Non - HistoriCode97 - 03/12/2023
+
+// Filtrage
+const float alpha = 0.2; // entre 0 (très lissé) et 1 (aucun lissage)
+const int threshold = 200; // valeur max de variation tolérée
 
 void initSensor()
 {
@@ -50,77 +56,73 @@ void initSensor()
         sensors[i].startContinuous();
         //sensors[i].setMeasurementTimingBudget(2000); // Non utilisé 
         sensors[i].setSignalRateLimit(0.3); // Default 0.25
+        sensorsValue[i] = 0; //Init sensor value
     }
     previousTime = millis();
 }
 
 bool readSensors(bool setDebug)
 {
-    bool state = true;
-
-    uint16_t previousSensor1 = sensor1;
-    uint16_t previousSensor2 = sensor2;
-    uint16_t previousSensor3 = sensor3;
+    bool state = SENSORS_OK;
 
     if (millis() - previousTime > READ_TIME_PERIOD_MS)
     {
         previousTime = millis();
-        sensor1 = sensors[0].readRangeContinuousMillimeters();
-        //sensor2 = sensors[1].readRangeContinuousMillimeters();
-        sensor3 = sensors[2].readRangeContinuousMillimeters();
+        readSensor(0);
+        readSensor(2);
 
-        if (sensors[0].timeoutOccurred()) {
-            state = false;
-            sensor1 = previousSensor1 ;
-        }
-        /*
-        if (sensors[1].timeoutOccurred() || sensor2 > MAX_SENSOR_VALUE) {
-            state = false;
-            sensor2 = previousSensor2 ;
-        }*/
-        if (sensors[2].timeoutOccurred()) {
-            state = false;
-            sensor3 = previousSensor3 ;
-        }
+        state = sensorsState[0] && sensorsState[2];
 
-        if (sensor1 > MAX_SENSOR_VALUE) sensor1 = previousSensor1;
-        //if (sensor2 > MAX_SENSOR_VALUE) sensor2 = previousSensor2;
-        if (sensor3 > MAX_SENSOR_VALUE) sensor3 = previousSensor3;
-
-        if (setDebug)
-        {
-            if (state == true)
-            {
-                String str = String(sensor1) + "   " + String(sensor3);
+        if (setDebug){
+            if (state == true){
+                String str = String(sensorsValue[0]) + "   " + String(sensorsValue[2]);
                 debug(str);
             }
             else debug("TIMEOUT");
         }
-        
     }
     return state;
 }
 
+bool readSensor(int sensorNumber){
+
+    bool state = true;
+    uint16_t tempValue = 0;
+
+    tempValue = sensors[sensorNumber].readRangeContinuousMillimeters();
+
+    if (sensors[sensorNumber].timeoutOccurred() || tempValue >= MAX_SENSOR_VALUE) state = false;
+    else sensorsValue[sensorNumber] = tempValue ;
+    
+    sensorsState[sensorNumber] = state ;
+
+    return state;
+}
+
+
 bool checkOpponent(uint16_t distance)
 {
-    // TODO: Test debug sensor
-    /*
-    if(readSensors(debugSensor))
+    if (readSensors())
     {
-        if (sensor1 <= distance || sensor3 <= distance) return true;
-        else return false;
-    }
-    */
-    if (distance > MAX_DISTANCE_MM) distance = MAX_DISTANCE_MM;
-    else if (distance < MIN_DISTANCE_MM ) distance = MIN_DISTANCE_MM;
+        bool detect = false;
 
-    if(readSensors())
-    {
-        if (sensor1 <= distance || sensor3 <= distance) {
-            debug ("Opponent at" + String(distance) + "mm");
-            return true;
-        }
-        else return false;
+        if (sensorsState[0] && sensorsValue[0] <= distance) detect = true;
+        if (sensorsState[2] && sensorsValue[2] <= distance) detect = true;
+
+        return detect;
     }
-    else return false;
+    else
+    {
+        // Aucun capteur n'est valide
+        return false;
+    }
+}
+
+uint16_t sensorFilter(uint16_t rawValue, float previousValue) {
+    int delta = abs((int)rawValue - (int)previousValue);
+
+    if (delta < threshold) {
+        previousValue = alpha * rawValue + (1.0 - alpha) * previousValue;
+    }
+    return (uint16_t)previousValue;
 }

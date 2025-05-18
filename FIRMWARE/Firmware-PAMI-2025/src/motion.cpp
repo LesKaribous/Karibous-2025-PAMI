@@ -144,14 +144,16 @@ void processMove(){
   long tempDistance_D = 0;
   long tempDistance_G = 0;
 
-  long distanceToGo = 0;
+  long distanceToCheck = MIN_DISTANCE_MM;
 
   debug("Processing Move...");
   while((motor_D.isRunning() || motor_G.isRunning())&& getMatchState() != PAMI_STOP){
     updateMotors();
     if (opponentChecking){
-      distanceToGo = convertStepToDist(motor_D.distanceToGo()); // TODO : Changer pour utiliser l'acceleration ou la vitesse ? 
-      if (checkOpponent(distanceToGo)){
+      //distanceToCheck = convertStepToDist(motor_D.distanceToGo()); // TODO : Changer pour utiliser l'acceleration ou la vitesse ? 
+      //debug ("check at" + String(distanceToCheck) + "mm");
+
+      if (checkOpponent(distanceToCheck)){
         //debug ("Opponent at" + String(distanceToGo) + "mm");
 
         tempDistance_D = motor_D.distanceToGo();
@@ -168,7 +170,7 @@ void processMove(){
 
         updateMotors();
         while(motor_D.isRunning() || motor_G.isRunning()) updateMotors();
-        while(checkOpponent(distanceToGo)&& getMatchState() != PAMI_STOP){
+        while(checkOpponent(distanceToCheck)&& getMatchState() != PAMI_STOP){
           updateMatchTime();
           //debug ("Opponent at" + String(distanceToGo) + "mm");
           //readSensors(true);

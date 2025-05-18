@@ -36,6 +36,12 @@ void updateMatchTime(){
     }
   }
 }
+long getElapsedTime(){
+    return elapsedTime ;
+}
+long getStartTime(){
+    return startTime ;
+}
 void pause(long millisecondes) {
     unsigned long startPause = millis(); // Enregistre le temps de début de la pause
 
