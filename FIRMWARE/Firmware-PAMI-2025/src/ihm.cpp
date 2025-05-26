@@ -14,7 +14,7 @@ int currentNote = 0;
 unsigned long noteStartTime = 0;
 bool noteIsPlaying = false;
 unsigned long noteDurationMs = 0;
-int tempo = 120;
+int tempo = 114;
 
 struct Note {
   int frequency;
@@ -28,65 +28,91 @@ struct Melody {
 
 // Chanteur - mélodie
 Note melody0[] = {
-  {NOTE_AS4, 16}, {NOTE_AS4, 16}, {NOTE_GS4, 16}, {NOTE_GS4, 16},
-  {NOTE_F5, 8}, {NOTE_F5, 8}, {NOTE_DS5, 4}, {NOTE_AS4, 16},
-  {NOTE_AS4, 16}, {NOTE_GS4, 16}, {NOTE_GS4, 16}, {NOTE_DS5, 8},
-  {NOTE_DS5, 8}, {NOTE_CS5, 8}, {NOTE_C5, 16}, {NOTE_AS4, 8},
+  {NOTE_AS4, 16},  {NOTE_AS4, 16},  {NOTE_GS4, 16},  {NOTE_GS4, 16},  // Never gonna
+  {NOTE_F5, 8},    {NOTE_F5, 8},    {NOTE_DS5, 4},     // give you up
 
-  {NOTE_CS5, 16}, {NOTE_CS5, 16}, {NOTE_CS5, 16}, {NOTE_CS5, 16},
-  {NOTE_CS5, 8}, {NOTE_DS5, 8}, {NOTE_C5, 8}, {NOTE_AS4, 16},
-  {NOTE_GS4, 8}, {NOTE_GS4, 8}, {NOTE_GS4, 8}, {NOTE_DS5, 4}, {NOTE_CS5, 2},
+  {NOTE_AS4, 16}, {NOTE_AS4, 16},  {NOTE_GS4, 16},  {NOTE_GS4, 16},                   // Never gonna
+  {NOTE_DS5, 8},   {NOTE_DS5, 8},   {NOTE_CS5, 8},   {NOTE_C5, 16}, {NOTE_AS4, 16},  // let you down
 
-  {NOTE_AS4, 16}, {NOTE_AS4, 16}, {NOTE_GS4, 16}, {NOTE_GS4, 16},
-  {NOTE_F5, 8}, {NOTE_F5, 8}, {NOTE_DS5, 4}, {NOTE_AS4, 16},
-  {NOTE_AS4, 16}, {NOTE_GS4, 16}, {NOTE_GS4, 16}, {NOTE_GS5, 8},
-  {NOTE_C5, 8}, {NOTE_CS5, 8}, {NOTE_C5, 16}, {NOTE_AS4, 8},
+  {NOTE_CS5, 16},  {NOTE_CS5, 16},  {NOTE_CS5, 16}, {NOTE_CS5, 16}, // Never gonna
+  {NOTE_CS5, 8},   {NOTE_DS5, 8},   {NOTE_C5, 8}, {NOTE_AS4, 16}, {NOTE_GS4, 16},   // run a-round
+  {NOTE_GS4, 8},   {NOTE_GS4, 8}, {NOTE_DS5, 16},   {NOTE_CS5, 6},  // and de-sert you
+                                      
 
-  {NOTE_CS5, 16}, {NOTE_CS5, 16}, {NOTE_CS5, 16}, {NOTE_CS5, 16},
-  {NOTE_CS5, 8}, {NOTE_DS5, 8}, {NOTE_C5, 8}, {NOTE_AS4, 16},
-  {NOTE_GS4, 8}, {NOTE_REST, 8}, {NOTE_GS4, 8}, {NOTE_DS5, 4},
-  {NOTE_CS5, 2}, {NOTE_REST, 4}
+  {NOTE_AS4, 16},  {NOTE_AS4, 16},  {NOTE_GS4, 16},  {NOTE_GS4, 16},  // Never gonna
+  {NOTE_F5, 8},    {NOTE_F5, 8},    {NOTE_DS5, 4},  // make you cry
+
+  {NOTE_AS4, 16},{NOTE_AS4, 16},  {NOTE_GS4, 16},  {NOTE_GS4, 16},     // Never gonna
+  {NOTE_GS5, 4}, {NOTE_C5, 16},    {NOTE_CS5, 6},   // say good-bye
+
+  {NOTE_AS4, 16}, {NOTE_C5, 16}, {NOTE_CS5, 16},  {NOTE_CS5, 16},// Never gonna
+  {NOTE_CS5, 8},   {NOTE_DS5, 8},   {NOTE_C5, 8},    {NOTE_AS4, 16},  // tell a lie
+  {NOTE_GS4, 8},   {NOTE_GS4, 8}, {NOTE_DS5, 16},   {NOTE_CS5, 6},  // and de-sert you
 };
 
 // Batterie - Beat
 Note melody1[] = {
-  {DRUM_KICK, 16}, {DRUM_KICK, 16}, {DRUM_KICK, 16}, {DRUM_KICK, 16},
-  {NOTE_REST, 8},  {NOTE_REST, 8},  {DRUM_SNARE, 4}, {NOTE_REST, 16},
-  {NOTE_REST, 16}, {NOTE_REST, 16}, {NOTE_REST, 16}, {DRUM_KICK, 8},
-  {DRUM_KICK, 8},  {NOTE_REST, 8},  {NOTE_REST, 16}, {NOTE_REST, 8},
-
-  {DRUM_SNARE, 16}, {DRUM_SNARE, 16}, {DRUM_SNARE, 16}, {NOTE_REST, 16},
-  {NOTE_REST, 8},   {NOTE_REST, 8},   {DRUM_KICK, 8},   {DRUM_KICK, 16},
-  {NOTE_REST, 8},   {NOTE_REST, 8},   {DRUM_SNARE, 8},  {DRUM_SNARE, 4},
-  {NOTE_REST, 2},
-
-  {NOTE_REST, 16},  {NOTE_REST, 16},  {DRUM_SNARE, 16}, {DRUM_SNARE, 16},
-  {DRUM_SNARE, 8},  {NOTE_REST, 8},   {NOTE_REST, 4},   {DRUM_KICK, 16},
-  {DRUM_KICK, 16},  {NOTE_REST, 16},  {NOTE_REST, 16},  {NOTE_REST, 8},
-  {DRUM_SNARE, 8},  {DRUM_SNARE, 8},  {NOTE_REST, 16},  {NOTE_REST, 8},
-
-  {NOTE_REST, 16},  {DRUM_KICK, 16},  {DRUM_KICK, 16},  {DRUM_KICK, 8},
-  {NOTE_REST, 8},   {NOTE_REST, 8},   {DRUM_SNARE, 16}, {DRUM_SNARE, 8},
-  {NOTE_REST, 8},   {NOTE_REST, 8},   {DRUM_KICK, 4},   {NOTE_REST, 2},
-  {NOTE_REST, 4}
+  {DRUM_KICK, 8}, {NOTE_REST, 8}, {DRUM_SNARE, 8}, {NOTE_REST, 8},
+  {DRUM_KICK, 8}, {NOTE_REST, 8}, {DRUM_SNARE, 8}, {NOTE_REST, 8},
+  {DRUM_KICK, 8}, {NOTE_REST, 8}, {DRUM_SNARE, 8}, {NOTE_REST, 8},
+  {DRUM_KICK, 8}, {NOTE_REST, 8}, {DRUM_SNARE, 8}, {NOTE_REST, 8},
+  {DRUM_KICK, 8}, {NOTE_REST, 8}, {DRUM_SNARE, 8}, {NOTE_REST, 8},
+  {DRUM_KICK, 8}, {NOTE_REST, 8}, {DRUM_SNARE, 8}, {NOTE_REST, 8},
+  {DRUM_KICK, 8}, {NOTE_REST, 8}, {DRUM_SNARE, 8}, {NOTE_REST, 8},
+  {DRUM_KICK, 8}, {NOTE_REST, 8}, {DRUM_SNARE, 8}, {NOTE_REST, 8},
+  {DRUM_KICK, 8}, {NOTE_REST, 8}, {DRUM_SNARE, 8}, {NOTE_REST, 8},
+  {DRUM_KICK, 8}, {NOTE_REST, 8}, {DRUM_SNARE, 8}, {NOTE_REST, 8},
+  {DRUM_KICK, 8}, {NOTE_REST, 8}, {DRUM_SNARE, 8}, {NOTE_REST, 8},
+  {DRUM_KICK, 8}, {NOTE_REST, 8}, {DRUM_SNARE, 8}, {NOTE_REST, 8}
 };
 
 
-
-// TODO : Guitare
+// Appui du Chant
 Note melody2[] = {
-  {NOTE_A3, 1},
-  {NOTE_GS3, 1},
-  {NOTE_FS3, 1},
-  {NOTE_E3, 1}
+  {NOTE_REST, 16},  {NOTE_REST, 16},  {NOTE_REST, 16},  {NOTE_REST, 16},  // Never gonna
+  {NOTE_F5, 8},    {NOTE_F5, 8},    {NOTE_DS5, 4},     // give you up
+
+  {NOTE_REST, 16}, {NOTE_REST, 16},  {NOTE_REST, 16},  {NOTE_REST, 16},                   // Never gonna
+  {NOTE_DS5, 8},   {NOTE_DS5, 8},   {NOTE_CS5, 8},   {NOTE_C5, 16}, {NOTE_AS4, 16},  // let you down
+
+  {NOTE_REST, 16},  {NOTE_REST, 16},  {NOTE_REST, 16}, {NOTE_REST, 16}, // Never gonna
+  {NOTE_CS5, 8},   {NOTE_DS5, 8},   {NOTE_C5, 8}, {NOTE_AS4, 16}, {NOTE_GS4, 16},   // run a-round
+  {NOTE_GS4, 8},   {NOTE_GS4, 8}, {NOTE_DS5, 16},   {NOTE_CS5, 6},  // and de-sert you
+                                      
+
+  {NOTE_REST, 16},  {NOTE_REST, 16},  {NOTE_REST, 16},  {NOTE_REST, 16},  // Never gonna
+  {NOTE_F5, 8},    {NOTE_F5, 8},    {NOTE_DS5, 4},  // make you cry
+
+  {NOTE_REST, 16},{NOTE_REST, 16},  {NOTE_REST, 16},  {NOTE_REST, 16},     // Never gonna
+  {NOTE_GS5, 4}, {NOTE_C5, 16},    {NOTE_CS5, 6},   // say good-bye
+
+  {NOTE_REST, 16}, {NOTE_REST, 16}, {NOTE_REST, 16},  {NOTE_REST, 16},// Never gonna
+  {NOTE_CS5, 8},   {NOTE_DS5, 8},   {NOTE_C5, 8},    {NOTE_AS4, 16},  // tell a lie
+  {NOTE_GS4, 8},   {NOTE_GS4, 8}, {NOTE_DS5, 16},   {NOTE_CS5, 6},  // and de-sert you
 };
 
-// TODO : Guitare 2
+// Synth
 Note melody3[] = {
-  {NOTE_CS5, 2}, {NOTE_B4, 2},
-  {NOTE_A4, 4}, {NOTE_GS4, 4}, {NOTE_E4, 4}, {NOTE_FS4, 4},
-  {NOTE_GS4, 4}, {NOTE_A4, 4}, {NOTE_B4, 4}, {NOTE_CS5, 4},
-  {NOTE_CS5, 2}, {NOTE_B4, 8}, {NOTE_A4, 8}
+  {NOTE_REST, 16},  {NOTE_REST, 16},  {NOTE_REST, 16},  {NOTE_REST, 16},  // Never gonna
+  {NOTE_F5, 4},    {NOTE_DS5, 4},     // give you up
+
+  {NOTE_REST, 16}, {NOTE_REST, 16},  {NOTE_REST, 16},  {NOTE_REST, 16},                   // Never gonna
+  {NOTE_DS5, 4},   {NOTE_CS5, 4},  // let you down
+
+  {NOTE_REST, 16},  {NOTE_REST, 16},  {NOTE_REST, 16}, {NOTE_REST, 16}, // Never gonna
+  {NOTE_CS5, 4},   {NOTE_GS4, 4},   // run a-round
+  {NOTE_DS5, 4},   {NOTE_CS5, 4},  // and de-sert you
+                                      
+
+  {NOTE_REST, 16}, {NOTE_REST, 16},  {NOTE_REST, 16},  {NOTE_REST, 16},  // Never gonna
+  {NOTE_F5, 4},    {NOTE_DS5, 4},  // make you cry
+
+  {NOTE_REST, 16}, {NOTE_REST, 16},  {NOTE_REST, 16},  {NOTE_REST, 16},     // Never gonna
+  {NOTE_GS5, 4},   {NOTE_CS5, 4},   // say good-bye
+
+  {NOTE_REST, 16},  {NOTE_REST, 16},  {NOTE_REST, 16}, {NOTE_REST, 16},// Never gonna
+  {NOTE_C5, 4},    {NOTE_AS4, 4},  // tell a lie
+  {NOTE_DS5, 4},   {NOTE_CS5, 4},  // and de-sert you
 };
 
 
