@@ -68,54 +68,58 @@ bool readSensors(bool setDebug)
     if (millis() - previousTime > READ_TIME_PERIOD_MS)
     {
         previousTime = millis();
-        readSensor(0);
-        readSensor(2);
+        readSensor(0,setDebug);
+        readSensor(2,setDebug);
 
         state = sensorsState[0] && sensorsState[2];
-
+        
         if (setDebug){
             if (state == true){
                 String str = String(sensorsValue[0]) + "   " + String(sensorsValue[2]);
                 debug(str);
             }
-            else debug("TIMEOUT");
+            //else debug("ATTENTION");
         }
+        
     }
     return state;
 }
 
-bool readSensor(int sensorNumber){
+bool readSensor(int sensorNumber, bool setDebug){
 
     bool state = true;
     uint16_t tempValue = 0;
+    bool timeoutState = false;
+    bool maxValueReached =false;
 
     tempValue = sensors[sensorNumber].readRangeContinuousMillimeters();
 
-    if (sensors[sensorNumber].timeoutOccurred() || tempValue >= MAX_SENSOR_VALUE) state = false;
+    timeoutState = sensors[sensorNumber].timeoutOccurred();
+    maxValueReached = tempValue >= MAX_SENSOR_VALUE;
+
+    if (timeoutState || maxValueReached ) state = false;
     else sensorsValue[sensorNumber] = tempValue ;
     
     sensorsState[sensorNumber] = state ;
 
+    if (setDebug){
+        if (timeoutState)debugLCD("TIMEOUT");
+        if (maxValueReached)debugLCD("MAXVALUE");
+    }
     return state;
 }
 
 
+
 bool checkOpponent(uint16_t distance)
 {
+    bool detect = false;
     if (readSensors())
     {
-        bool detect = false;
-
         if (sensorsState[0] && sensorsValue[0] <= distance) detect = true;
         if (sensorsState[2] && sensorsValue[2] <= distance) detect = true;
-
-        return detect;
     }
-    else
-    {
-        // Aucun capteur n'est valide
-        return false;
-    }
+    return detect;
 }
 
 uint16_t sensorFilter(uint16_t rawValue, float previousValue) {
