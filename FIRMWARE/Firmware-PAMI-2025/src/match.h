@@ -5,7 +5,7 @@
 #include <Arduino.h>
 #include "ihm.h"
 
-#define TIME_START_MATCH 85000  //85000
+#define TIME_START_MATCH 85000  // TODO 85000
 #define TIME_END_MATCH 100000   //100000
 
 #define MATCH_WAIT 0

@@ -28,7 +28,7 @@ void setup()
   armsDown();
   selectMelody(getRobotNumber());
 
-  //while(1) readSensors(true); //Test sensors
+  //while(1) readSensors(true); // TODO : Test sensors
 
   waitStart();
 }
@@ -208,18 +208,19 @@ void match()
 void strategiePAMI()
 {
 
-  setOpponentChecking(false);
+  setOpponentChecking(true);
   if (getRobotNumber() == 0)
   {
     if (getTeamColor() == TEAM_BLUE)
     {
-      setOpponentChecking(false); // !!!!!!!!!!!
       goTo(3000-500, 100);
       setOpponentChecking(false);
       setMaxSpeed(MAX_SPEED * 0.40f);
       setAcceleration(MAX_ACCELERATION * 0.40f);
       goTo(3000-1300, 100, 90);
-      go(-240);
+      setMaxSpeed(MAX_SPEED * 0.10f);
+      setAcceleration(MAX_ACCELERATION * 0.10f);
+      go(-200);
       setCurrentY(CENTER_POSITION_MM);
       setMaxSpeed(MAX_SPEED * 0.30f);
       setAcceleration(MAX_ACCELERATION * 0.30f);
@@ -227,13 +228,13 @@ void strategiePAMI()
     }
     else
     {
-      setOpponentChecking(false);
       goTo(500, 100);
-      setOpponentChecking(false);
       setMaxSpeed(MAX_SPEED * 0.40f);
       setAcceleration(MAX_ACCELERATION * 0.40f);
       goTo(1300, 100, 90);
-      go(-240);
+      setMaxSpeed(MAX_SPEED * 0.10f);
+      setAcceleration(MAX_ACCELERATION * 0.10f);
+      go(-200);
       setCurrentY(CENTER_POSITION_MM);
       setMaxSpeed(MAX_SPEED * 0.30f);
       setAcceleration(MAX_ACCELERATION * 0.30f);
@@ -244,16 +245,14 @@ void strategiePAMI()
   {
     if (getTeamColor() == TEAM_BLUE)
     {
-      pause(4000);
+      pause(5000);
       goTo(3000-200, 200);
-      setOpponentChecking(true);
       goTo(3000-900, 500,-90);
     }
     else
     {
-      pause(4000);
+      pause(5000);
       goTo(200, 200);
-      setOpponentChecking(true);
       goTo(900, 500,-90);
     }
   }
@@ -261,32 +260,44 @@ void strategiePAMI()
   {
     if (getTeamColor() == TEAM_BLUE)
     {
-      pause(2000);
+      pause(3000);
       goTo(3000-200, 300);
-      setOpponentChecking(true);
-      goTo(3000-1200, 700,-90);
+      goTo(3000-1220, 640,-90);
     }
     else
     {
-      pause(2000);
+      pause(3000);
       goTo(200, 300);
-      setOpponentChecking(true);
-      goTo(1200, 700,-90);
+      goTo(1220, 640,-90);
     }
   }
   else if (getRobotNumber() == 3)
   {
     if (getTeamColor() == TEAM_BLUE)
     {
+      goTo(3000-475, 400);
+      goTo(3000-1030, 900);
+      goTo(3000-1730, 900);
+      goTo(3000-1800, 700, -90);
+      
+      /*
       goTo(3000-200, 400);
       setOpponentChecking(true);
       goTo(3000-1800, 700,-90);
+      */
     }
     else
     {
+      goTo(475, 400);
+      goTo(1030, 900);
+      goTo(1730, 900);
+      goTo(1800, 700, -90);
+      
+      /*
       goTo(200, 400);
       setOpponentChecking(true);
       goTo(1800, 700,-90);
+      */
     }
   }
 }
