@@ -2109,7 +2109,7 @@
 			(pintype "passive")
 			(uuid "e7067f8d-4bcf-4f4c-ad66-d8c46bbe96e5")
 		)
-		(model "${KIPRJMOD}/packages3D/CP_Elec_5x5.4.wrl"
+		(model "${KIPRJMOD}/Packages3D/CP_Elec_5x5.4.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -2323,7 +2323,7 @@
 			(pintype "passive")
 			(uuid "b8bf44fa-83d5-407f-93d9-ebf146c19f0a")
 		)
-		(model "${KIPRJMOD}/packages3D/R_1206_3216Metric.wrl"
+		(model "${KIPRJMOD}/Packages3D/R_1206_3216Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -2711,7 +2711,7 @@
 			(pintype "passive")
 			(uuid "a3bd7bcc-9063-4264-8a20-f04a12415d6a")
 		)
-		(model "${KIPRJMOD}/packages3D/C_1206_3216Metric.wrl"
+		(model "${KIPRJMOD}/Packages3D/C_1206_3216Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -3069,7 +3069,7 @@
 			(pintype "passive")
 			(uuid "f4cbb186-c809-4332-9525-a1bc1eb869e9")
 		)
-		(model "${KIPRJMOD}/packages3D/R_1206_3216Metric.wrl"
+		(model "${KIPRJMOD}/Packages3D/R_1206_3216Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -3349,7 +3349,7 @@
 			(pintype "passive")
 			(uuid "73739c47-1906-4def-bdc2-ae4c1d99f487")
 		)
-		(model "${KIPRJMOD}/packages3D/PinHeader_1x03_P2.54mm_Vertical.wrl"
+		(model "${KIPRJMOD}/Packages3D/PinHeader_1x03_P2.54mm_Vertical.wrl"
 			(hide yes)
 			(offset
 				(xyz 0 0 0)
@@ -3794,7 +3794,7 @@
 			(pintype "passive")
 			(uuid "4571a0a9-7cf7-48ec-80d1-88629c441ac7")
 		)
-		(model "${KIPRJMOD}/packages3D/CP_Elec_5x5.4.wrl"
+		(model "${KIPRJMOD}/Packages3D/CP_Elec_5x5.4.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -4345,7 +4345,7 @@
 			(pintype "power_out")
 			(uuid "5c7f9613-6f1b-4538-bde0-9fe3f5053a16")
 		)
-		(model "${KIPRJMOD}/packages3D/Converter_DCDC_RECOM_R-78E-0.5_THT.wrl"
+		(model "${KIPRJMOD}/Packages3D/Converter_DCDC_RECOM_R-78E-0.5_THT.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -4559,7 +4559,7 @@
 			(pintype "passive")
 			(uuid "253a33c2-da56-4c17-99e4-77be316785a4")
 		)
-		(model "${KIPRJMOD}/packages3D/R_1206_3216Metric.wrl"
+		(model "${KIPRJMOD}/Packages3D/R_1206_3216Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -5122,7 +5122,7 @@
 			(pintype "passive")
 			(uuid "8e296cb6-63ae-4063-8b45-c55ef6078f51")
 		)
-		(model "${KIPRJMOD}/packages3D/D_SOD-523.wrl"
+		(model "${KIPRJMOD}/Packages3D/D_SOD-523.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -7018,7 +7018,7 @@
 			(pintype "passive")
 			(uuid "2e220e29-f5ff-4dbc-9017-00dcb051707c")
 		)
-		(model "${KIPRJMOD}/packages3D/CP_Radial_D8.0mm_P3.50mm.wrl"
+		(model "${KIPRJMOD}/Packages3D/CP_Radial_D8.0mm_P3.50mm.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -7545,7 +7545,7 @@
 			(pintype "passive")
 			(uuid "1f0795dc-1591-4a31-a58a-ed8468af49e1")
 		)
-		(model "${KIPRJMOD}/packages3D/SW_SPST_CK_RS282G05A3.wrl"
+		(model "${KIPRJMOD}/Packages3D/SW_SPST_CK_RS282G05A3.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -8052,7 +8052,7 @@
 			(pintype "passive")
 			(uuid "76a41dfd-bfc4-498f-956f-b59446fe8af6")
 		)
-		(model "${KIPRJMOD}/packages3D/LED_1206_3216Metric.wrl"
+		(model "${KIPRJMOD}/Packages3D/LED_1206_3216Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -8266,7 +8266,7 @@
 			(pintype "passive")
 			(uuid "a38d9a38-bfcc-422a-bce4-d9f0236aed95")
 		)
-		(model "${KIPRJMOD}/packages3D/R_1206_3216Metric.wrl"
+		(model "${KIPRJMOD}/Packages3D/R_1206_3216Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -8551,7 +8551,7 @@
 			(pintype "passive")
 			(uuid "07e15c5b-b8c7-4455-b9c1-747b8113e5eb")
 		)
-		(model "${KIPRJMOD}/packages3D/D_SOD-523.wrl"
+		(model "${KIPRJMOD}/Packages3D/D_SOD-523.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -9147,7 +9147,7 @@
 			(pintype "passive")
 			(uuid "f770bd0e-59e9-4448-acb9-e42a1084da70")
 		)
-		(model "${KIPRJMOD}/packages3D/PinSocket_1x04_P2.54mm_Vertical.wrl"
+		(model "${KIPRJMOD}/Packages3D/PinSocket_1x04_P2.54mm_Vertical.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -9158,7 +9158,7 @@
 				(xyz 0 0 0)
 			)
 		)
-		(model "${KIPRJMOD}/packages3D/128x32-OLED.STEP"
+		(model "${KIPRJMOD}/Packages3D/128x32-OLED.STEP"
 			(offset
 				(xyz 17.725 -3.8 9.3)
 			)
@@ -9470,7 +9470,7 @@
 			(pintype "passive")
 			(uuid "f5a91e42-af3f-45e5-9e65-60e473d3fbbc")
 		)
-		(model "${KIPRJMOD}/packages3D/SW_SPST_CK_RS282G05A3.wrl"
+		(model "${KIPRJMOD}/Packages3D/SW_SPST_CK_RS282G05A3.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -9684,7 +9684,7 @@
 			(pintype "passive")
 			(uuid "ffd6f9f5-2155-43a0-b863-eeb02a2b72fb")
 		)
-		(model "${KIPRJMOD}/packages3D/R_1206_3216Metric.wrl"
+		(model "${KIPRJMOD}/Packages3D/R_1206_3216Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -10566,7 +10566,7 @@
 			(pintype "passive")
 			(uuid "6f4e7c74-9594-4efa-9d15-3ada441299b7")
 		)
-		(model "${KIPRJMOD}/packages3D/ESP32-S3-WROOM-1U.STEP"
+		(model "${KIPRJMOD}/Packages3D/ESP32-S3-WROOM-1U.step"
 			(offset
 				(xyz -9 -9.75 0)
 			)
@@ -10750,7 +10750,7 @@
 			(pintype "passive")
 			(uuid "595a0828-c42d-4576-9244-d8f1d8d06bb7")
 		)
-		(model "${KIPRJMOD}/packages3D/Buzzer_12x9.5RM7.6.wrl"
+		(model "${KIPRJMOD}/Packages3D/Buzzer_12x9.5RM7.6.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -10984,7 +10984,7 @@
 			(pintype "passive")
 			(uuid "cdadf7d9-640f-4f65-8cb8-05d6f0bacb8d")
 		)
-		(model "${KIPRJMOD}/packages3D/CP_EIA-3528-12_Kemet-T.wrl"
+		(model "${KIPRJMOD}/Packages3D/CP_EIA-3528-12_Kemet-T.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -11141,7 +11141,7 @@
 			(solder_mask_margin 0.125)
 			(uuid "8534ca24-0d80-4ea2-8b89-5241560a16d0")
 		)
-		(model "${KIPRJMOD}/packages3D/UB16SKW03N-C.stp"
+		(model "${KIPRJMOD}/Packages3D/UB16SKW03N-C.stp"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -11355,7 +11355,7 @@
 			(pintype "passive")
 			(uuid "d9b4752a-2cb2-4315-bc72-4ed2d2ddc1df")
 		)
-		(model "${KIPRJMOD}/packages3D/C_1206_3216Metric.wrl"
+		(model "${KIPRJMOD}/Packages3D/C_1206_3216Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -13281,7 +13281,7 @@
 			(pintype "passive")
 			(uuid "a089f6da-2998-4ce2-99f9-2758e88eeae5")
 		)
-		(model "${KIPRJMOD}/packages3D/SW_DIP_SPSTx02_Slide_9.78x7.26mm_W7.62mm_P2.54mm.wrl"
+		(model "${KIPRJMOD}/Packages3D/SW_DIP_SPSTx02_Slide_9.78x7.26mm_W7.62mm_P2.54mm.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -15020,7 +15020,7 @@
 			(pintype "passive")
 			(uuid "e7b620c4-c2b4-4ae9-ba67-9159dfe3e367")
 		)
-		(model "${KIPRJMOD}/packages3D/CP_Radial_D8.0mm_P3.50mm.wrl"
+		(model "${KIPRJMOD}/Packages3D/CP_Radial_D8.0mm_P3.50mm.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -15630,7 +15630,7 @@
 			(thermal_bridge_angle 90)
 			(uuid "911521e8-a2a9-4fdf-b902-d5ecf89c158f")
 		)
-		(model "${KIPRJMOD}/packages3D/61300815721 (rev1).stp"
+		(model "${KIPRJMOD}/Packages3D/61300815721 (rev1).stp"
 			(offset
 				(xyz 6.35 0 -4.5)
 			)
@@ -15641,7 +15641,7 @@
 				(xyz 0 -180 -90)
 			)
 		)
-		(model "${KIPRJMOD}/packages3D/61300815721 (rev1).stp"
+		(model "${KIPRJMOD}/Packages3D/61300815721 (rev1).stp"
 			(offset
 				(xyz -6.35 0 -4.5)
 			)
@@ -15652,7 +15652,7 @@
 				(xyz 0 180 90)
 			)
 		)
-		(model "${KIPRJMOD}/packages3D/TMC2208_SILENTSTEPSTICK.step"
+		(model "${KIPRJMOD}/Packages3D/TMC2208_SILENTSTEPSTICK.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -15888,7 +15888,7 @@
 			(pintype "passive")
 			(uuid "afd76224-589a-4ba8-bd99-d6b5d6de37d8")
 		)
-		(model "${KIPRJMOD}/packages3D/LED_1206_3216Metric.wrl"
+		(model "${KIPRJMOD}/Packages3D/LED_1206_3216Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -16173,7 +16173,7 @@
 			(pintype "passive")
 			(uuid "a58ad308-d87d-4ccf-b80f-d6f1d8e6789f")
 		)
-		(model "${KIPRJMOD}/packages3D/D_SMA.wrl"
+		(model "${KIPRJMOD}/Packages3D/D_SMA.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -16409,7 +16409,7 @@
 			(pintype "passive")
 			(uuid "9d6f4971-2f9a-4a77-8b90-fae0df345d47")
 		)
-		(model "${KIPRJMOD}/packages3D/LED_1206_3216Metric.wrl"
+		(model "${KIPRJMOD}/Packages3D/LED_1206_3216Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -16623,7 +16623,7 @@
 			(pintype "passive")
 			(uuid "0a8b5571-5d83-4330-847b-2b2a7a7c03cb")
 		)
-		(model "${KIPRJMOD}/packages3D/R_1206_3216Metric.wrl"
+		(model "${KIPRJMOD}/Packages3D/R_1206_3216Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -17095,7 +17095,7 @@
 			(pintype "passive")
 			(uuid "878aef24-1ecf-4994-bec0-705240a892d4")
 		)
-		(model "${KIPRJMOD}/packages3D/R_1206_3216Metric.wrl"
+		(model "${KIPRJMOD}/Packages3D/R_1206_3216Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -17483,7 +17483,7 @@
 			(pintype "passive")
 			(uuid "37827644-fa48-404e-8153-6302d0dace2c")
 		)
-		(model "${KIPRJMOD}/packages3D/C_1206_3216Metric.wrl"
+		(model "${KIPRJMOD}/Packages3D/C_1206_3216Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -17697,7 +17697,7 @@
 			(pintype "passive")
 			(uuid "80a5a20d-5782-4c02-a573-5cb8f5c09226")
 		)
-		(model "${KIPRJMOD}/packages3D/R_1206_3216Metric.wrl"
+		(model "${KIPRJMOD}/Packages3D/R_1206_3216Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -18844,7 +18844,7 @@
 			(pintype "passive")
 			(uuid "5c0e1cb4-e9e1-4512-86b7-96674a950a96")
 		)
-		(model "${KIPRJMOD}/packages3D/R_1206_3216Metric.wrl"
+		(model "${KIPRJMOD}/Packages3D/R_1206_3216Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -19353,7 +19353,7 @@
 			(pintype "passive")
 			(uuid "5e63c8d6-d5fe-4e2a-ba81-2b79595a6a38")
 		)
-		(model "${KIPRJMOD}/packages3D/R_1206_3216Metric.wrl"
+		(model "${KIPRJMOD}/Packages3D/R_1206_3216Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -19792,7 +19792,7 @@
 			(pintype "power_in")
 			(uuid "4d27cd9d-35b4-43d6-8144-47c92b5bd40c")
 		)
-		(model "${KIPRJMOD}/packages3D/SOT-223.wrl"
+		(model "${KIPRJMOD}/Packages3D/SOT-223.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -20005,7 +20005,7 @@
 			(pintype "passive")
 			(uuid "d4320fd9-6869-4d54-96eb-e4614cda5fbd")
 		)
-		(model "${KIPRJMOD}/packages3D/C_1206_3216Metric.wrl"
+		(model "${KIPRJMOD}/Packages3D/C_1206_3216Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -20450,7 +20450,7 @@
 			(pintype "passive")
 			(uuid "d4718094-e7cf-48ae-a735-108f6813fac3")
 		)
-		(model "${KIPRJMOD}/packages3D/CP_Elec_5x5.4.wrl"
+		(model "${KIPRJMOD}/Packages3D/CP_Elec_5x5.4.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -20664,7 +20664,7 @@
 			(pintype "passive")
 			(uuid "d659c01a-7bdc-4e08-a37d-db3245cc7c36")
 		)
-		(model "${KIPRJMOD}/packages3D/R_1206_3216Metric.wrl"
+		(model "${KIPRJMOD}/Packages3D/R_1206_3216Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -20938,7 +20938,7 @@
 			(pintype "input")
 			(uuid "c4bb770f-4ff5-4d3c-93de-2294971cfdf7")
 		)
-		(model "${KIPRJMOD}/packages3D/LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm.wrl"
+		(model "${KIPRJMOD}/Packages3D/LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -21151,7 +21151,7 @@
 			(pintype "passive")
 			(uuid "7b332361-5b23-415f-be14-875fe6b302f0")
 		)
-		(model "${KIPRJMOD}/packages3D/C_1206_3216Metric.wrl"
+		(model "${KIPRJMOD}/Packages3D/C_1206_3216Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -21503,7 +21503,7 @@
 			(pintype "passive")
 			(uuid "c1979233-99fb-4d65-8589-8df188a15887")
 		)
-		(model "${KIPRJMOD}/packages3D/USB-type-B.STEP"
+		(model "${KIPRJMOD}/Packages3D/USB-type-B.STEP"
 			(offset
 				(xyz 6.95 -1.25 5.5)
 			)
@@ -22135,7 +22135,7 @@
 			(pintype "passive")
 			(uuid "589d8270-c6e9-4bd8-a8dc-9188c9853c39")
 		)
-		(model "${KIPRJMOD}/packages3D/R_1206_3216Metric.wrl"
+		(model "${KIPRJMOD}/Packages3D/R_1206_3216Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -22421,7 +22421,7 @@
 			(pintype "passive")
 			(uuid "b0a99f95-fffc-412d-95d3-1d4eb3dd18a8")
 		)
-		(model "${KIPRJMOD}/packages3D/D_SMA.wrl"
+		(model "${KIPRJMOD}/Packages3D/D_SMA.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -22635,7 +22635,7 @@
 			(pintype "passive")
 			(uuid "1d580c55-e57f-4205-83d0-c0a500fb1d54")
 		)
-		(model "${KIPRJMOD}/packages3D/R_1206_3216Metric.wrl"
+		(model "${KIPRJMOD}/Packages3D/R_1206_3216Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -23245,7 +23245,7 @@
 			(thermal_bridge_angle 90)
 			(uuid "69fb2132-efab-4bda-9195-f08162d7579c")
 		)
-		(model "${KIPRJMOD}/packages3D/61300815721 (rev1).stp"
+		(model "${KIPRJMOD}/Packages3D/61300815721 (rev1).stp"
 			(offset
 				(xyz 6.35 0 -4.5)
 			)
@@ -23256,7 +23256,7 @@
 				(xyz 0 -180 -90)
 			)
 		)
-		(model "${KIPRJMOD}/packages3D/61300815721 (rev1).stp"
+		(model "${KIPRJMOD}/Packages3D/61300815721 (rev1).stp"
 			(offset
 				(xyz -6.35 0 -4.5)
 			)
@@ -23267,7 +23267,7 @@
 				(xyz 0 180 90)
 			)
 		)
-		(model "${KIPRJMOD}/packages3D/TMC2208_SILENTSTEPSTICK.step"
+		(model "${KIPRJMOD}/Packages3D/TMC2208_SILENTSTEPSTICK.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -23616,7 +23616,7 @@
 			(pintype "passive")
 			(uuid "3a7168ed-dc31-40c2-8c11-36b9c24e4b1b")
 		)
-		(model "${KIPRJMOD}/packages3D/LED_1206_3216Metric.wrl"
+		(model "${KIPRJMOD}/Packages3D/LED_1206_3216Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -23866,7 +23866,7 @@
 			(pintype "passive")
 			(uuid "574c72b8-5d99-4d16-86e1-92f7bbbb3659")
 		)
-		(model "${KIPRJMOD}/packages3D/SK-12D10 1P2T.step"
+		(model "${KIPRJMOD}/Packages3D/SK-12D10 1P2T.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -24011,6 +24011,7 @@
 			(effects
 				(font
 					(size 0.001 0.001)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -24022,6 +24023,7 @@
 			(effects
 				(font
 					(size 0.001 0.001)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -24317,7 +24319,7 @@
 			(pintype "passive")
 			(uuid "2e1d9a06-70d2-4d17-bd9c-8e83e3f5a813")
 		)
-		(model "${KIPRJMOD}/packages3D/R_1206_3216Metric.wrl"
+		(model "${KIPRJMOD}/Packages3D/R_1206_3216Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -25095,7 +25097,7 @@
 			(pintype "passive")
 			(uuid "75953a8e-c6cd-4855-ba7c-56ec6dbf76c6")
 		)
-		(model "${KIPRJMOD}/packages3D/LED_1206_3216Metric.wrl"
+		(model "${KIPRJMOD}/Packages3D/LED_1206_3216Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -25309,7 +25311,7 @@
 			(pintype "passive")
 			(uuid "3400117c-cf7a-4fa1-bbda-69e6b9d07abf")
 		)
-		(model "${KIPRJMOD}/packages3D/C_1206_3216Metric.wrl"
+		(model "${KIPRJMOD}/Packages3D/C_1206_3216Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -25568,7 +25570,7 @@
 			(solder_mask_margin 0.102)
 			(uuid "6f9215f8-b096-4d98-beaf-b6a1d050d8fa")
 		)
-		(model "${KIPRJMOD}/packages3D/vl53l0x.STEP"
+		(model "${KIPRJMOD}/Packages3D/vl53l0x.step"
 			(offset
 				(xyz 4 -0.15 2.5)
 			)
@@ -25579,7 +25581,7 @@
 				(xyz -90 0 90)
 			)
 		)
-		(model "${KIPRJMOD}/packages3D/vl53l0x.STEP"
+		(model "${KIPRJMOD}/Packages3D/vl53l0x.step"
 			(hide yes)
 			(offset
 				(xyz -1.5 -0.15 8.05)
@@ -25591,7 +25593,7 @@
 				(xyz 180 0 90)
 			)
 		)
-		(model "${KIPRJMOD}/packages3D/DS1022_black_1x06p_100mil_TypeD_rev1.0.STEP"
+		(model "${KIPRJMOD}/Packages3D/DS1022_black_1x06p_100mil_TypeD_rev1.0.step"
 			(hide yes)
 			(offset
 				(xyz 0 -6.35 2.55)
@@ -25603,7 +25605,7 @@
 				(xyz 180 0 -90)
 			)
 		)
-		(model "${KIPRJMOD}/packages3D/6x_Male_Pin_2.54_mm.STEP"
+		(model "${KIPRJMOD}/Packages3D/6x_Male_Pin_2.54_mm.step"
 			(offset
 				(xyz 11.4 2.15 7.54)
 			)
@@ -25614,7 +25616,7 @@
 				(xyz 90 0 -90)
 			)
 		)
-		(model "${KIPRJMOD}/packages3D/61300615721 (rev1).stp"
+		(model "${KIPRJMOD}/Packages3D/61300615721 (rev1).stp"
 			(offset
 				(xyz 0 0 -4.7)
 			)
@@ -25873,7 +25875,7 @@
 			(solder_mask_margin 0.102)
 			(uuid "a115c7ae-f6ab-4ce2-b811-14b53386b1cf")
 		)
-		(model "${KIPRJMOD}/packages3D/vl53l0x.STEP"
+		(model "${KIPRJMOD}/Packages3D/vl53l0x.step"
 			(hide yes)
 			(offset
 				(xyz 4 -0.15 2.5)
@@ -25885,7 +25887,7 @@
 				(xyz -90 0 90)
 			)
 		)
-		(model "${KIPRJMOD}/packages3D/vl53l0x.STEP"
+		(model "${KIPRJMOD}/Packages3D/vl53l0x.step"
 			(offset
 				(xyz -1.5 -0.15 8.05)
 			)
@@ -25896,7 +25898,7 @@
 				(xyz 180 0 90)
 			)
 		)
-		(model "${KIPRJMOD}/packages3D/DS1022_black_1x06p_100mil_TypeD_rev1.0.STEP"
+		(model "${KIPRJMOD}/Packages3D/DS1022_black_1x06p_100mil_TypeD_rev1.0.step"
 			(offset
 				(xyz 0 -6.35 2.55)
 			)
@@ -25907,7 +25909,7 @@
 				(xyz 180 0 -90)
 			)
 		)
-		(model "${KIPRJMOD}/packages3D/6x_Male_Pin_2.54_mm.STEP"
+		(model "${KIPRJMOD}/Packages3D/6x_Male_Pin_2.54_mm.step"
 			(hide yes)
 			(offset
 				(xyz 11.4 2.15 7.54)
@@ -25919,7 +25921,7 @@
 				(xyz 90 0 -90)
 			)
 		)
-		(model "${KIPRJMOD}/packages3D/61300615721 (rev1).stp"
+		(model "${KIPRJMOD}/Packages3D/61300615721 (rev1).stp"
 			(offset
 				(xyz 0 0 -4.7)
 			)
@@ -26204,7 +26206,7 @@
 			(pintype "passive")
 			(uuid "326a6a38-3c09-4429-86a0-e2a3b8e42458")
 		)
-		(model "${KIPRJMOD}/packages3D/PinHeader_1x03_P2.54mm_Vertical.wrl"
+		(model "${KIPRJMOD}/Packages3D/PinHeader_1x03_P2.54mm_Vertical.wrl"
 			(hide yes)
 			(offset
 				(xyz 0 0 0)
@@ -26501,7 +26503,7 @@
 			(pintype "passive")
 			(uuid "3d94d113-76d0-426e-bd94-dcb89456a470")
 		)
-		(model "${KIPRJMOD}/packages3D/PinHeader_1x03_P2.54mm_Vertical.wrl"
+		(model "${KIPRJMOD}/Packages3D/PinHeader_1x03_P2.54mm_Vertical.wrl"
 			(hide yes)
 			(offset
 				(xyz 0 0 0)
@@ -26928,7 +26930,7 @@
 			(pintype "passive")
 			(uuid "8914c51b-c30f-4659-bc33-3f9244f5cc9d")
 		)
-		(model "${KIPRJMOD}/packages3D/MoleKK254_RightAngle_022057028.stp"
+		(model "${KIPRJMOD}/Packages3D/MoleKK254_RightAngle_022057028.stp"
 			(offset
 				(xyz 1.27 4.27 3)
 			)
@@ -26939,7 +26941,7 @@
 				(xyz 0 180 0)
 			)
 		)
-		(model "${KIPRJMOD}/packages3D/Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical.wrl"
+		(model "${KIPRJMOD}/Packages3D/Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical.wrl"
 			(hide yes)
 			(offset
 				(xyz 0 0 0)
@@ -27236,7 +27238,7 @@
 			(pintype "passive")
 			(uuid "e2240afe-0fbd-4baa-909a-3af966cd4640")
 		)
-		(model "${KIPRJMOD}/packages3D/PinHeader_1x04_P2.54mm_Vertical.wrl"
+		(model "${KIPRJMOD}/Packages3D/PinHeader_1x04_P2.54mm_Vertical.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -27495,7 +27497,7 @@
 			(solder_mask_margin 0.102)
 			(uuid "dc953cca-b790-454d-84dc-53329b51a95f")
 		)
-		(model "${KIPRJMOD}/packages3D/vl53l0x.STEP"
+		(model "${KIPRJMOD}/Packages3D/vl53l0x.step"
 			(hide yes)
 			(offset
 				(xyz 4 -0.15 2.5)
@@ -27507,7 +27509,7 @@
 				(xyz -90 0 90)
 			)
 		)
-		(model "${KIPRJMOD}/packages3D/vl53l0x.STEP"
+		(model "${KIPRJMOD}/Packages3D/vl53l0x.step"
 			(offset
 				(xyz -1.5 -0.15 8.05)
 			)
@@ -27518,7 +27520,7 @@
 				(xyz 180 0 90)
 			)
 		)
-		(model "${KIPRJMOD}/packages3D/DS1022_black_1x06p_100mil_TypeD_rev1.0.STEP"
+		(model "${KIPRJMOD}/Packages3D/DS1022_black_1x06p_100mil_TypeD_rev1.0.step"
 			(offset
 				(xyz 0 -6.35 2.55)
 			)
@@ -27529,7 +27531,7 @@
 				(xyz 180 0 -90)
 			)
 		)
-		(model "${KIPRJMOD}/packages3D/6x_Male_Pin_2.54_mm.STEP"
+		(model "${KIPRJMOD}/Packages3D/6x_Male_Pin_2.54_mm.step"
 			(hide yes)
 			(offset
 				(xyz 11.4 2.15 7.54)
@@ -27541,7 +27543,7 @@
 				(xyz 90 0 -90)
 			)
 		)
-		(model "${KIPRJMOD}/packages3D/61300615721 (rev1).stp"
+		(model "${KIPRJMOD}/Packages3D/61300615721 (rev1).stp"
 			(offset
 				(xyz 0 0 -4.7)
 			)
@@ -27837,7 +27839,7 @@
 			(pintype "passive")
 			(uuid "1225405a-555b-48f7-a82d-ceea25960888")
 		)
-		(model "${KIPRJMOD}/packages3D/PinHeader_1x04_P2.54mm_Vertical.wrl"
+		(model "${KIPRJMOD}/Packages3D/PinHeader_1x04_P2.54mm_Vertical.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
